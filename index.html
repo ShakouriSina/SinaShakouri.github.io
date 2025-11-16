@@ -134,7 +134,7 @@
 If you have a question, a project in mind, or simply want to say hello, I’d be genuinely happy to hear from you :)</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form onsubmit="sendEmail(); return false;">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
@@ -150,7 +150,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="sinashakouri98@gmail.com" class="button submit">Send Message</a></li>
+											<li><button type="button" class="button submit" onclick="sendEmail()">Send Message</button></li>
 										</ul>
 									</form>
 								</section>
@@ -205,9 +205,28 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+	function sendEmail() {
+	    const name = document.getElementById("name").value;
+	    const email = document.getElementById("email").value;
+	    const message = document.getElementById("message").value;
+	
+	    const mailtoLink =
+	        `mailto:sinashakouri98@gmail.com` +
+	        `?subject=Message from ${encodeURIComponent(name)}` +
+	        `&body=` +
+	        encodeURIComponent(
+	            `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+	        );
+	
+	    window.location.href = mailtoLink;
+	}
+	</script>
+
 
 	</body>
 
 </html>
+
 
 
