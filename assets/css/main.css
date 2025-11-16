@@ -4,6 +4,7 @@
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 */
 
 html, body, div, span, applet, object,
@@ -3907,3 +3908,75 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+/* ---------- JOURNAL PUBLICATION CARDS ---------- */
+
+.journal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.journal-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    padding-bottom: 1.2em;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.journal-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+/* TOP IMAGE */
+.journal-img {
+    width: 100%;
+    height: 240px;     /* ارتفاع ثابت برای همه کارت‌ها */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* TEXT AREA */
+.journal-info {
+    padding: 1.2em 1.4em;
+}
+
+.journal-info h3 {
+    margin: 0 0 0.6em;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #0e0e0f;
+    line-height: 1.45;
+}
+
+.journal-meta {
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.6;
+}
+
+.journal-meta a {
+    color: #2c5cff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.journal-meta a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .journal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journal-img {
+        height: 200px;
+    }
+}
