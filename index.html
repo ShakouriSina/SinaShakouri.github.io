@@ -36,47 +36,92 @@
 				    </div>
 				</section>
 
+<!-- One: Conferences & Publications -->
+<section id="one" class="wrapper style2">
+    <div class="inner">
+        <h2 style="text-align:center; margin-bottom:2em;">Conferences & Publications</h2>
 
+        <!-- Conference Card 1 -->
+        <div class="conference-card">
+            <a href="images/certificate01.jpg" target="_blank">
+                <img src="images/certificate01.jpg" alt="Certificate 1" class="certificate-img"/>
+            </a>
+            <div class="conference-info">
+                <h3>International Oil & Gas Symposium 2023</h3>
+                <p>Paper: "Optimization of Acidizing Operations using Machine Learning Techniques"</p>
+            </div>
+        </div>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+        <!-- Conference Card 2 -->
+        <div class="conference-card">
+            <a href="images/certificate02.jpg" target="_blank">
+                <img src="images/certificate02.jpg" alt="Certificate 2" class="certificate-img"/>
+            </a>
+            <div class="conference-info">
+                <h3>World Petroleum Congress 2022</h3>
+                <p>Paper: "Data-Driven Modeling of Nanofluid-Based Drilling Fluids"</p>
+            </div>
+        </div>
+
+        <!-- Conference Card 3 -->
+        <div class="conference-card">
+            <a href="images/certificate03.jpg" target="_blank">
+                <img src="images/certificate03.jpg" alt="Certificate 3" class="certificate-img"/>
+            </a>
+            <div class="conference-info">
+                <h3>Machine Learning in Oil & Gas Conference 2021</h3>
+                <p>Paper: "Predictive Models for CO2 Absorption in Nanofluids"</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.conference-card {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.conference-card:hover {
+    transform: translateY(-5px);
+}
+.certificate-img {
+    width: 180px;
+    height: auto;
+    border-radius: 6px;
+    margin-right: 1.5em;
+    cursor: pointer;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.conference-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #111;
+}
+.conference-info p {
+    margin: 0.3em 0 0;
+    color: #444;
+    font-size: 1em;
+}
+@media (max-width: 768px) {
+    .conference-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    .certificate-img {
+        margin-right: 0;
+        margin-bottom: 1em;
+        width: 250px;
+    }
+}
+</style>
 
 
 				<!-- Three -->
@@ -174,6 +219,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
