@@ -156,64 +156,138 @@
 }
 </style>
 
+/* ---------- JOURNAL PUBLICATION CARDS ---------- */
 
-				<!-- Two -->
+.journal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.journal-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    padding-bottom: 1.2em;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.journal-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+/* TOP IMAGE */
+.journal-img {
+    width: 100%;
+    height: 240px;     /* ارتفاع ثابت برای همه کارت‌ها */
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+/* TEXT AREA */
+.journal-info {
+    padding: 1.2em 1.4em;
+}
+
+.journal-info h3 {
+    margin: 0 0 0.6em;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #0e0e0f;
+    line-height: 1.45;
+}
+
+.journal-meta {
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.6;
+}
+
+.journal-meta a {
+    color: #2c5cff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.journal-meta a:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .journal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journal-img {
+        height: 200px;
+    }
+}
+
+<!-- Two: Journal Publications -->
 <section id="two" class="wrapper style3 fade-up">
     <div class="inner">
-        <h2>What we do</h2>
-        <p>Phasellus convallis elit id ullamcorper pulvinar...</p>
-        <div class="features"> ... </div>
-        <ul class="actions">
-            <li><a href="generic.html" class="button">Learn more</a></li>
-        </ul>
+        <h2 style="text-align:center; margin-bottom:2em; font-weight:700;">Journal Publications</h2>
+
+        <div class="journal-grid">
+
+            <!-- Journal Card 1 -->
+            <div class="journal-card">
+                <img src="images/journal1.png" alt="Journal Cover" class="journal-img">
+                <div class="journal-info">
+                    <h3><em>Article Title Goes Here</em></h3>
+                    <p class="journal-meta">
+                        Journal Name • Impact Factor: <strong>---</strong> <br>
+                        Volume: -- • Pages: -- <br>
+                        DOI: <a href="#" target="_blank">Click Here</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Journal Card 2 -->
+            <div class="journal-card">
+                <img src="images/journal2.png" alt="Journal Cover" class="journal-img">
+                <div class="journal-info">
+                    <h3><em>Article Title Goes Here</em></h3>
+                    <p class="journal-meta">
+                        Journal Name • Impact Factor: <strong>---</strong> <br>
+                        Volume: -- • Pages: -- <br>
+                        DOI: <a href="#" target="_blank">Click Here</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Journal Card 3 -->
+            <div class="journal-card">
+                <img src="images/journal3.png" alt="Journal Cover" class="journal-img">
+                <div class="journal-info">
+                    <h3><em>Article Title Goes Here</em></h3>
+                    <p class="journal-meta">
+                        Journal Name • Impact Factor: <strong>---</strong> <br>
+                        Volume: -- • Pages: -- <br>
+                        DOI: <a href="#" target="_blank">Click Here</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Journal Card 4 -->
+            <div class="journal-card">
+                <img src="images/journal4.png" alt="Journal Cover" class="journal-img">
+                <div class="journal-info">
+                    <h3><em>Article Title Goes Here</em></h3>
+                    <p class="journal-meta">
+                        Journal Name • Impact Factor: <strong>---</strong> <br>
+                        Volume: -- • Pages: -- <br>
+                        DOI: <a href="#" target="_blank">Click Here</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
-
-
-				
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-
 
 
 
@@ -312,6 +386,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
