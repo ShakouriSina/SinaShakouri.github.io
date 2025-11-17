@@ -3910,9 +3910,7 @@ input, select, textarea {
 		}
 
 
-/* ===== JOURNAL CARDS - CLEAN FINAL ===== */
-
-/* ===== JOURNAL CARDS — FINAL CLEAN VERSION ===== */
+/* ===== JOURNAL CARDS – FINAL CLEAN VERSION ===== */
 
 .journal-grid {
   display: grid;
@@ -3920,19 +3918,13 @@ input, select, textarea {
   gap: 2em;
 }
 
-/* CARD */
 .journal-card {
   background: #ffffff;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  padding-bottom: 0.25rem; /* خیلی کوتاه */
+  padding-bottom: 0.3rem;       /* کوچکتر شد */
   overflow: hidden;
   transition: transform 0.28s, box-shadow 0.28s;
-}
-
-.journal-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
 }
 
 /* IMAGE */
@@ -3941,25 +3933,22 @@ input, select, textarea {
   height: 240px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
+  display: block;
 }
 
-/* TEXT CONTAINER */
+/* TEXT */
 .journal-info {
-  padding: 1.1em 1.4em;
-  color: #111 !important;  
-}
-
-/* force text colors to always be dark */
-.journal-info * {
+  padding: 1.15em 1.4em;
   color: #111 !important;
 }
 
 /* TITLE */
 .journal-title {
-  font-size: 1.22rem;
+  font-size: 1.23rem;
   font-weight: 700;
   line-height: 1.38;
-  margin: 0 0 0.55rem 0; /* فاصله استاندارد تا publisher */
+  margin-bottom: 0.65rem;   /* فاصله بزرگ‌تر = یک اینتر */
+  color: #0b0b0b !important;
 }
 
 /* PUBLISHER */
@@ -3967,36 +3956,42 @@ input, select, textarea {
   display: block;
   font-weight: 700;
   font-size: 1rem;
-  margin-bottom: 0.25rem; /* فاصله خیلی کم */
+  margin-bottom: 0.45rem;   /* فاصله قبل از بولت‌ها */
+  color: #0b0b0b !important;
 }
 
 /* BULLETS */
 .journal-bullets {
   margin: 0;
-  padding-left: 0.8rem; /* کمی راست‌تر */
-  margin-bottom: 0.45rem;
-  list-style: disc;
+  padding-left: 0.85rem;    /* کمی راست‌تر */
+  margin-bottom: 0.65rem;   /* فاصله قبل از لینک */
+  list-style: disc outside;
 }
 
 .journal-bullets li {
-  margin-bottom: 0.2rem;
-  font-size: 0.95rem;
-  line-height: 1.32;
+  margin-bottom: 0.25rem;
+  font-size: 0.96rem;
+  line-height: 1.38;
+  color: #222 !important;     /* اجبار رنگ تیره */
 }
 
-/* LINK — همیشه آبی، بدون خط، بدون تغییر رنگ در hover */
+.journal-bullets strong {
+  color: #000 !important;     /* تاریخ و شماره 100% سیاه */
+}
+
+/* LINK */
 .publisher-link {
+  display: inline-block;
   font-weight: 600;
   font-size: 0.98rem;
   color: #2c5cff !important;
   text-decoration: none !important;
-  margin-bottom: 0;
-  display: inline-block;
+  border: none !important;
+  margin-bottom: 0.3rem;       /* کارت پایین کوچک‌تر */
 }
 
 .publisher-link:hover {
-  color: #1f45e6 !important;
-  opacity: 0.95;
+  color: #1b3ed9 !important;  /* آبی تیره‌تر، هرگز سفید نشود */
   text-decoration: none !important;
 }
 
