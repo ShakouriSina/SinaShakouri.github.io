@@ -3910,107 +3910,105 @@ input, select, textarea {
 		}
 
 
-/* ---------- JOURNAL PUBLICATION CARDS ---------- */
+/* ===== JOURNAL CARDS - CLEAN FINAL ===== */
 
 .journal-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
 }
 
+/* CARD */
 .journal-card {
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    padding-bottom: 0.35em !important;   /* پایین کارت کم */
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.journal-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  padding-bottom: 0.35rem; /* کم و مینیمال */
+  overflow: hidden;
+  transition: transform 0.28s, box-shadow 0.28s;
 }
 
 /* IMAGE */
 .journal-img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    border-bottom: 1px solid #eee;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  display: block;
 }
 
-/* TEXT AREA */
+/* TEXT CONTAINER - force dark color for all descendants */
 .journal-info {
-    padding: 1.15em 1.4em;
-    color: #111;
+  padding: 1.1em 1.4em;
+  color: #111 !important;            /* هیچ متنی سفید نشود */
 }
 
-/* TITLE */
+/* TITLE: bold, بزرگ‌تر، فاصله کمی بعد آن */
 .journal-title {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: #0a0a0a;
-    line-height: 1.35;
-    margin: 0 0 0.35em 0;  /* فاصله بسیار کم با بولت‌ها */
+  font-size: 1.22rem;
+  font-weight: 700;
+  line-height: 1.36;
+  margin: 0 0 0.45rem 0;             /* فاصله کم تا نام ژورنال */
+  color: #0a0a0a !important;
 }
 
-/* MAIN PUBLISHER LINE */
+/* PUBLISHER (روی یک خط جدا بعد از title) */
 .publisher-main {
-    font-weight: 700;
-    font-size: 1em;
-    color: #000;
-    margin: 0;
-    margin-bottom: 3px;  /* فاصله خیلی کم */
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0 0 0.18rem 0;            /* خیلی نزدیک به بولت‌ها */
+  color: #0b0b0b !important;
 }
 
-/* BULLET LIST */
+/* BULLET LIST: خیلی جمع و جور */
 .journal-bullets {
-    margin: 0;
-    padding-left: 1rem;
-    margin-top: 2px;
-    margin-bottom: 6px;
+  margin: 0;
+  padding-left: 1rem;               /* فاصله برای بولت */
+  margin-top: 0.1rem;
+  margin-bottom: 0.45rem;
+  list-style: disc outside;
 }
 
 .journal-bullets li {
-    margin-bottom: 3px;
-    font-size: 0.95em;
-    color: #333;
+  margin: 0 0 0.18rem 0;           /* ردیف‌های نزدیک هم */
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.35;
 }
 
-/* LINK */
+/* LINK: آبی بدون خط - و روی hover هم آبی بمونه (هرگز سفید نشود) */
 .publisher-link {
-    font-weight: 600;
-    font-size: 0.98em;
-    color: #2c5cff;
-    text-decoration: none !important; /* حذف خط */
-
-    display: inline-block;
-    margin-top: 4px;
-    margin-bottom: 0; /* کمترین فاصله */
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.98rem;
+  color: #2c5cff !important;
+  text-decoration: none !important;
+  border: 0 !important;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-.publisher-link:hover {
-    opacity: 0.75;
+/* اگر hover باعث می‌شد رنگ متن تغییر کند، force کنه همان آبی بمونه */
+.publisher-link:hover,
+.journal-card:hover .publisher-link {
+  color: #2c5cff !important;
+  opacity: 0.95 !important;
+  text-decoration: none !important;
 }
 
-/* REMOVE ANY HR (PREVENT BLACK LINE EVEN IF HTML NOT CLEAN) */
+/* محافظت اضافی: اگر جایی hr یا border اضافه شده باشد، مخفی شود */
 .journal-info hr,
+.journal-info > hr,
 .journal-meta hr,
-.publisher-link hr {
-    display: none !important;
-    border: 0 !important;
-    height: 0 !important;
+hr.journal-hidden {
+  display: none !important;
+  border: 0 !important;
+  height: 0 !important;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .journal-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .journal-img {
-        height: 200px;
-    }
+  .journal-grid { grid-template-columns: 1fr; }
+  .journal-img { height: 200px; }
 }
-
