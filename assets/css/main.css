@@ -4069,3 +4069,61 @@ input, select, textarea {
 }
 
 
+
+
+
+
+
+
+/* ===== TITLE ===== */
+.journal-title {
+    font-size: 1.28em !important;
+    font-weight: 700 !important;
+    line-height: 1.45 !important;
+    margin: 0 0 0.45em !important;
+    color: #0a0a0a !important;
+}
+
+/* ===== Publisher (main line) ===== */
+.publisher-main {
+    font-weight: 700;
+    font-size: 1em;
+    color: #000;
+    display: block;
+    margin-bottom: 4px;   /* فاصله بسیار کم از بولت‌ها */
+}
+
+/* ===== BULLET LIST ===== */
+.journal-bullets {
+    margin: 0;                /* حذف فاصله‌های اضافه */
+    padding-left: 1rem;       /* کوچک و رسمی */
+    margin-top: 2px;          /* فاصله کوچک از Publisher */
+    margin-bottom: 8px;       /* فاصله کوچک قبل از لینک */
+}
+
+.journal-bullets li {
+    margin-bottom: 3px;       /* بولت‌ها جمع‌وجور */
+    font-size: 0.95em;
+    color: #333;
+}
+
+/* ===== LINK ===== */
+.publisher-link {
+    font-weight: 600;
+    font-size: 1em;
+    color: #2c5cff;
+    text-decoration: none !important;  /* خط زیر حذف شود */
+}
+
+/* ===== کارت پایین خیلی کوتاه شود ===== */
+.journal-card {
+    padding-bottom: 0.4em !important; /* مینیمال */
+}
+
+/* فاصله لینک با پایین کارت کم شود */
+.journal-meta {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
