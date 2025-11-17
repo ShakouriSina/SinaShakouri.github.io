@@ -4005,3 +4005,67 @@ input, select, textarea {
 .publisher-link:hover {
     opacity: 0.7;
 }
+
+
+
+
+
+
+
+
+
+/* ===== FIX INVISIBLE TEXT ===== */
+.journal-info, 
+.journal-info p, 
+.journal-info strong, 
+.journal-info em, 
+.journal-meta {
+    color: #111 !important;     /* متن پررنگ و قابل دید */
+}
+
+/* ===== TITLE STYLE ===== */
+.journal-title {
+    font-size: 1.28em !important;
+    font-weight: 700 !important;
+    line-height: 1.45 !important;
+    margin: 0 0 0.55em !important;
+    color: #0a0a0a !important;
+}
+
+/* ===== PUBLISHER (بالا) ===== */
+.publisher-main {
+    font-weight: 700;
+    font-size: 1em;
+    color: #000;
+}
+
+/* ===== BULLET LINES ===== */
+.journal-bullets {
+    margin: 0.4em 0 0.6em 0;
+    padding-left: 1.1em;
+}
+
+.journal-bullets li {
+    margin-bottom: 4px;
+    font-size: 0.96em;
+    color: #333;
+}
+
+/* ===== LINK ===== */
+.publisher-link {
+    font-weight: 600;
+    font-size: 1em;
+    text-decoration: none;
+    color: #2c5cff;
+}
+
+.publisher-link:hover {
+    opacity: 0.7;
+}
+
+/* ===== FIX CARD PADDING (کوتاه‌تر شود) ===== */
+.journal-card {
+    padding-bottom: 0.6em !important;
+}
+
+
