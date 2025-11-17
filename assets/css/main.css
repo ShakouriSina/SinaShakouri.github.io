@@ -3912,6 +3912,8 @@ input, select, textarea {
 
 /* ===== JOURNAL CARDS - CLEAN FINAL ===== */
 
+/* ===== JOURNAL CARDS — FINAL CLEAN VERSION ===== */
+
 .journal-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -3923,9 +3925,14 @@ input, select, textarea {
   background: #ffffff;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  padding-bottom: 0.35rem; /* کم و مینیمال */
+  padding-bottom: 0.25rem; /* خیلی کوتاه */
   overflow: hidden;
   transition: transform 0.28s, box-shadow 0.28s;
+}
+
+.journal-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
 }
 
 /* IMAGE */
@@ -3934,77 +3941,63 @@ input, select, textarea {
   height: 240px;
   object-fit: cover;
   border-bottom: 1px solid #eee;
-  display: block;
 }
 
-/* TEXT CONTAINER - force dark color for all descendants */
+/* TEXT CONTAINER */
 .journal-info {
   padding: 1.1em 1.4em;
-  color: #111 !important;            /* هیچ متنی سفید نشود */
+  color: #111 !important;  
 }
 
-/* TITLE: bold, بزرگ‌تر، فاصله کمی بعد آن */
+/* force text colors to always be dark */
+.journal-info * {
+  color: #111 !important;
+}
+
+/* TITLE */
 .journal-title {
   font-size: 1.22rem;
   font-weight: 700;
-  line-height: 1.36;
-  margin: 0 0 0.45rem 0;             /* فاصله کم تا نام ژورنال */
-  color: #0a0a0a !important;
+  line-height: 1.38;
+  margin: 0 0 0.55rem 0; /* فاصله استاندارد تا publisher */
 }
 
-/* PUBLISHER (روی یک خط جدا بعد از title) */
+/* PUBLISHER */
 .publisher-main {
   display: block;
   font-weight: 700;
   font-size: 1rem;
-  margin: 0 0 0.18rem 0;            /* خیلی نزدیک به بولت‌ها */
-  color: #0b0b0b !important;
+  margin-bottom: 0.25rem; /* فاصله خیلی کم */
 }
 
-/* BULLET LIST: خیلی جمع و جور */
+/* BULLETS */
 .journal-bullets {
   margin: 0;
-  padding-left: 1rem;               /* فاصله برای بولت */
-  margin-top: 0.1rem;
+  padding-left: 0.8rem; /* کمی راست‌تر */
   margin-bottom: 0.45rem;
-  list-style: disc outside;
+  list-style: disc;
 }
 
 .journal-bullets li {
-  margin: 0 0 0.18rem 0;           /* ردیف‌های نزدیک هم */
-  color: #333;
+  margin-bottom: 0.2rem;
   font-size: 0.95rem;
-  line-height: 1.35;
+  line-height: 1.32;
 }
 
-/* LINK: آبی بدون خط - و روی hover هم آبی بمونه (هرگز سفید نشود) */
+/* LINK — همیشه آبی، بدون خط، بدون تغییر رنگ در hover */
 .publisher-link {
-  display: inline-block;
   font-weight: 600;
   font-size: 0.98rem;
   color: #2c5cff !important;
   text-decoration: none !important;
-  border: 0 !important;
-  margin-top: 0;
   margin-bottom: 0;
+  display: inline-block;
 }
 
-/* اگر hover باعث می‌شد رنگ متن تغییر کند، force کنه همان آبی بمونه */
-.publisher-link:hover,
-.journal-card:hover .publisher-link {
-  color: #2c5cff !important;
-  opacity: 0.95 !important;
+.publisher-link:hover {
+  color: #1f45e6 !important;
+  opacity: 0.95;
   text-decoration: none !important;
-}
-
-/* محافظت اضافی: اگر جایی hr یا border اضافه شده باشد، مخفی شود */
-.journal-info hr,
-.journal-info > hr,
-.journal-meta hr,
-hr.journal-hidden {
-  display: none !important;
-  border: 0 !important;
-  height: 0 !important;
 }
 
 /* MOBILE */
