@@ -3922,7 +3922,7 @@ input, select, textarea {
   background: #ffffff;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  padding-bottom: 0.3rem;       /* کوچکتر شد */
+  padding-bottom: 0rem;       /* کوچکتر شد */
   overflow: hidden;
   transition: transform 0.28s, box-shadow 0.28s;
 }
@@ -3947,7 +3947,7 @@ input, select, textarea {
   font-size: 1.23rem;
   font-weight: 700;
   line-height: 1.38;
-  margin-bottom: 1.8rem;   /* فاصله بزرگ‌تر = یک اینتر */
+  margin-bottom: 5rem;   /* فاصله بزرگ‌تر = یک اینتر */
   color: #0b0b0b !important;
 }
 
@@ -3963,8 +3963,8 @@ input, select, textarea {
 /* BULLETS */
 .journal-bullets {
   margin: 0;
-  padding-left: 0.3rem;    /* کمی راست‌تر */
-  margin-bottom: 1.8rem;   /* فاصله قبل از لینک */
+  padding-left: 0rem;    /* کمی راست‌تر */
+  margin-bottom: 5rem;   /* فاصله قبل از لینک */
   list-style: disc outside;
 }
 
@@ -4000,4 +4000,5 @@ input, select, textarea {
   .journal-grid { grid-template-columns: 1fr; }
   .journal-img { height: 200px; }
 }
+
 
