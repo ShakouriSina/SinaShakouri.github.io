@@ -3944,12 +3944,14 @@ input, select, textarea {
 
 /* TITLE */
 .journal-title {
-  font-size: 1.23rem;
-  font-weight: 700;
-  line-height: 1.38;
-  margin-bottom: 1.7rem;   /* فاصله بزرگ‌تر = یک اینتر */
-  color: #0b0b0b !important;
+    font-size: 1.23rem;
+    font-weight: 700;
+    line-height: 1.38;
+    margin-bottom: 1.7rem;   
+    color: #0b0b0b !important;
+    text-align: left;          /* ← عنوان از چپ */
 }
+
 
 /* PUBLISHER */
 .publisher-main {
@@ -4019,6 +4021,7 @@ input, select, textarea {
     text-align: center;             /* متن وسط باکس */
     box-shadow: 0 6px 20px rgba(0,0,0,0.12); /* سایه ملایم */
 }
+
 
 
 
