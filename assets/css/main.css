@@ -3963,7 +3963,7 @@ input, select, textarea {
 /* BULLETS */
 .journal-bullets {
   margin: 0;
-  padding-left: 0rem;    /* کمی راست‌تر */
+  padding-left: 2rem;    /* کمی راست‌تر */
   margin-bottom: 2rem;   /* فاصله قبل از لینک */
   list-style: disc outside;
 }
@@ -4000,6 +4000,7 @@ input, select, textarea {
   .journal-grid { grid-template-columns: 1fr; }
   .journal-img { height: 200px; }
 }
+
 
 
 
