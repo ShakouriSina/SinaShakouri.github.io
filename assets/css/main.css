@@ -3922,7 +3922,7 @@ input, select, textarea {
   background: #ffffff;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-  padding-bottom: 0rem;       /* کوچکتر شد */
+  padding-bottom: -0.5rem;       /* کوچکتر شد */
   overflow: hidden;
   transition: transform 0.28s, box-shadow 0.28s;
 }
@@ -3947,7 +3947,7 @@ input, select, textarea {
   font-size: 1.23rem;
   font-weight: 700;
   line-height: 1.38;
-  margin-bottom: 2rem;   /* فاصله بزرگ‌تر = یک اینتر */
+  margin-bottom: 1.7rem;   /* فاصله بزرگ‌تر = یک اینتر */
   color: #0b0b0b !important;
 }
 
@@ -3963,8 +3963,8 @@ input, select, textarea {
 /* BULLETS */
 .journal-bullets {
   margin: 0;
-  padding-left: 2rem;    /* کمی راست‌تر */
-  margin-bottom: 2rem;   /* فاصله قبل از لینک */
+  padding-left: 1.8rem;    /* کمی راست‌تر */
+  margin-bottom: 1.7rem;   /* فاصله قبل از لینک */
   list-style: disc outside;
 }
 
@@ -3987,7 +3987,7 @@ input, select, textarea {
   color: #2c5cff !important;
   text-decoration: none !important;
   border: none !important;
-  margin-bottom: 0rem;       /* کارت پایین کوچک‌تر */
+  margin-bottom:-0.5rem;       /* کارت پایین کوچک‌تر */
 }
 
 .publisher-link:hover {
@@ -4005,15 +4005,20 @@ input, select, textarea {
 
 
 .section-title-box {
-    display: inline-block;
-    background: #ffffff;
-    color: #000000;
-    padding: 0.5em 1.3em;          /* کنترل ضخامت باکس */
-    border-radius: 40px;           /* حالت کپسولی */
-    font-size: 1.55rem;            /* بزرگ و حرفه‌ای */
-    font-weight: 900;              /* بولد واقعی */
-    letter-spacing: 0.5px;         /* کمی فاصله حرفه‌ای بین حروف */
-    margin: 0.4em 0 1.2em 0;       /* فاصله از بالا ↓ پایین */
-    box-shadow: 0 4px 14px rgba(0,0,0,0.10); /* سایه ملایم */
+    display: block;                 /* اجازه می‌دهد width واقعی اعمال شود */
+    width: 70%;                     /* عرض باکس: 80٪ از صفحه */
+    max-width: 900px;               /* حداکثر عرض برای صفحات بزرگ */
+    margin: 0.8em auto;               /* مرکز صفحه: بالا و پایین 1em، چپ و راست auto */
+    background: #ffffff;            /* سفید */
+    color: #000000;                 /* متن مشکی */
+    padding: 0.8em 2em;             /* فاصله داخلی: بالا/پایین و چپ/راست */
+    border-radius: 50px;            /* گرد بودن گوشه‌ها */
+    font-size: 1.8rem;              /* بزرگ و حرفه‌ای */
+    font-weight: 900;               /* بولد واقعی */
+    letter-spacing: 0.5px;          /* کمی فاصله بین حروف */
+    text-align: center;             /* متن وسط باکس */
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12); /* سایه ملایم */
 }
+
+
 
