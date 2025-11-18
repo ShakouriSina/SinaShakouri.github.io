@@ -3947,7 +3947,7 @@ input, select, textarea {
   font-size: 1.23rem;
   font-weight: 700;
   line-height: 1.38;
-  margin-bottom: 5rem;   /* فاصله بزرگ‌تر = یک اینتر */
+  margin-bottom: 2rem;   /* فاصله بزرگ‌تر = یک اینتر */
   color: #0b0b0b !important;
 }
 
@@ -3964,7 +3964,7 @@ input, select, textarea {
 .journal-bullets {
   margin: 0;
   padding-left: 0rem;    /* کمی راست‌تر */
-  margin-bottom: 5rem;   /* فاصله قبل از لینک */
+  margin-bottom: 2rem;   /* فاصله قبل از لینک */
   list-style: disc outside;
 }
 
@@ -4000,5 +4000,6 @@ input, select, textarea {
   .journal-grid { grid-template-columns: 1fr; }
   .journal-img { height: 200px; }
 }
+
 
 
