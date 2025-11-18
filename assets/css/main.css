@@ -4004,3 +4004,16 @@ input, select, textarea {
 
 
 
+.section-title-box {
+    display: inline-block;
+    background: #ffffff;
+    color: #000000;
+    padding: 0.5em 1.3em;          /* کنترل ضخامت باکس */
+    border-radius: 40px;           /* حالت کپسولی */
+    font-size: 1.55rem;            /* بزرگ و حرفه‌ای */
+    font-weight: 900;              /* بولد واقعی */
+    letter-spacing: 0.5px;         /* کمی فاصله حرفه‌ای بین حروف */
+    margin: 0.4em 0 1.2em 0;       /* فاصله از بالا ↓ پایین */
+    box-shadow: 0 4px 14px rgba(0,0,0,0.10); /* سایه ملایم */
+}
+
