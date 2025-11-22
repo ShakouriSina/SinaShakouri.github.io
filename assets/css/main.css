@@ -4026,22 +4026,20 @@ input, select, textarea {
 
 /* Logo */
 .sidebar-logo-container {
-    padding-top: 1em; /* فاصله از بالا */
+    padding-top: 1em; /* فاصله کمی از بالا */
     text-align: center;
+    z-index: 10;
 }
 
-.sidebar-logo {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-/* Menu */
+/* Sidebar nav (منو) */
 .sidebar-nav {
+    position: absolute;       /* مستقل از لوگو */
+    top: 50%;                 /* وسط ارتفاع سایدبار */
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%); /* دقیقاً وسط */
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* وسط کل ارتفاع سایدبار */
-    height: calc(100vh - 4em); /* ارتفاع سایدبار منهای ارتفاع لوگو تقریبی */
+    align-items: center;       /* وسط افقی */
 }
+
