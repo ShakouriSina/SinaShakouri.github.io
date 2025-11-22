@@ -4024,16 +4024,10 @@ input, select, textarea {
 
 
 
-
-/* Safe sidebar logo */
-.sidebar-logo-box {
-    width: 100%;
-    padding: 1.5em 2.5em 0 2.5em;
-    text-align: center;
-}
-
 .sidebar-logo {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
