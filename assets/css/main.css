@@ -4022,32 +4022,25 @@ input, select, textarea {
     box-shadow: 0 6px 20px rgba(0,0,0,0.12); /* سایه ملایم */
 }
 
-
 #sidebar > .inner {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* این وسط قرار گرفتن محتواست */
-    align-items: center;     /* وسط افقی */
     height: 100%;
-    padding: 0;              /* بدون padding اضافی */
-    overflow: hidden;        /* هیچ اسکرولی نیاد */
+    overflow: hidden; /* بدون اسکرول */
 }
 
-/* لوگو در بالای سایدبار */
+/* لوگو */
 .sidebar-logo-container {
-    margin-top: 1em;       /* فاصله کم از بالا */
-    margin-bottom: auto;   /* فضای باقی‌مانده به سمت پایین میره */
-    width: 100%;
+    padding-top: 1em;
     text-align: center;
 }
 
-/* منو سایدبار */
+/* منو وسط وسط */
 .sidebar-nav {
-    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: auto;    /* فضای بالای منو خودش رو پر میکنه تا وسط باشه */
-    margin-bottom: auto; /* فضای پایین منو هم پر میشه */
 }
 
