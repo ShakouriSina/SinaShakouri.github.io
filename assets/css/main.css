@@ -4025,3 +4025,18 @@ input, select, textarea {
 
 
 
+<style>
+/* Sidebar Logo */
+.sidebar-logo-box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar-logo {
+    width: 100%;          /* دقیقاً هم عرض سایدبار */
+    height: auto;         /* ارتفاع خودکار = مربعی چون عکس 1×1 است */
+    object-fit: cover;    /* اگر عکس دقیقاً مربع نبود، کراپ زیبا */
+}
+</style>
+
