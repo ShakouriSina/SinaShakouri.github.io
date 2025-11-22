@@ -4023,23 +4023,31 @@ input, select, textarea {
 }
 
 
-
-/* Logo */
-.sidebar-logo-container {
-    padding-top: 1em; /* فاصله کمی از بالا */
-    text-align: center;
-    z-index: 10;
-}
-
-/* Sidebar nav (منو) */
-.sidebar-nav {
-    position: absolute;       /* مستقل از لوگو */
-    top: 50%;                 /* وسط ارتفاع سایدبار */
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%); /* دقیقاً وسط */
+#sidebar > .inner {
     display: flex;
     flex-direction: column;
-    align-items: center;       /* وسط افقی */
+    justify-content: center; /* این وسط قرار گرفتن محتواست */
+    align-items: center;     /* وسط افقی */
+    height: 100%;
+    padding: 0;              /* بدون padding اضافی */
+    overflow: hidden;        /* هیچ اسکرولی نیاد */
+}
+
+/* لوگو در بالای سایدبار */
+.sidebar-logo-container {
+    margin-top: 1em;       /* فاصله کم از بالا */
+    margin-bottom: auto;   /* فضای باقی‌مانده به سمت پایین میره */
+    width: 100%;
+    text-align: center;
+}
+
+/* منو سایدبار */
+.sidebar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;    /* فضای بالای منو خودش رو پر میکنه تا وسط باشه */
+    margin-bottom: auto; /* فضای پایین منو هم پر میشه */
 }
 
