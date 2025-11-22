@@ -4024,10 +4024,24 @@ input, select, textarea {
 
 
 
+/* Logo */
+.sidebar-logo-container {
+    padding-top: 1em; /* فاصله از بالا */
+    text-align: center;
+}
+
 .sidebar-logo {
     width: 100%;
     height: auto;
     display: block;
     margin: 0;
     padding: 0;
+}
+
+/* Menu */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* وسط کل ارتفاع سایدبار */
+    height: calc(100vh - 4em); /* ارتفاع سایدبار منهای ارتفاع لوگو تقریبی */
 }
