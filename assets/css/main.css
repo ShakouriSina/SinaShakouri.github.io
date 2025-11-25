@@ -4030,10 +4030,14 @@ input, select, textarea {
 }
 
 /* لوگو */
-.sidebar-logo-container {
-    padding-top: 1em;
-    text-align: center;
+.sidebar-logo-container img {
+    width: 100%;      /* دقیقاً به اندازه عرض سایدبار */
+    max-width: 160px; /* حداکثر اندازه — اگر سایدبار کوچک‌تر بود، کوچیک میشه */
+    height: auto;
+    display: block;
+    margin: 1em auto 0 auto; /* صاف وسط */
 }
+
 
 /* منو وسط وسط */
 .sidebar-nav {
@@ -4043,4 +4047,5 @@ input, select, textarea {
     flex-direction: column;
     align-items: center;
 }
+
 
