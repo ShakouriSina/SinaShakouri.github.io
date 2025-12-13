@@ -4049,3 +4049,21 @@ input, select, textarea {
 }
 
 
+.intro-tags {
+    list-style: none;
+    padding: 0;
+    margin: 1.2em 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.intro-tags li {
+    padding: 6px 14px;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 999px;
+    font-size: 0.95em;
+    color: #ffffff;
+    letter-spacing: 0.3px;
+}
+
