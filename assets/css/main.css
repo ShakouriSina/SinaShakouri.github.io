@@ -4048,22 +4048,21 @@ input, select, textarea {
     align-items: center;
 }
 
-
-.intro-tags {
+.intro-points {
     list-style: none;
     padding: 0;
-    margin: 1.2em 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    margin-top: 1.2em;
 }
 
-.intro-tags li {
-    padding: 6px 14px;
-    border: 1px solid rgba(255,255,255,0.35);
-    border-radius: 999px;
-    font-size: 0.95em;
+.intro-points li {
+    margin-bottom: 6px;
     color: #ffffff;
-    letter-spacing: 0.3px;
+    font-size: 1.02em;
+}
+
+.intro-points li::before {
+    content: "▸";
+    margin-right: 10px;
+    color: #6fc3df;
 }
 
