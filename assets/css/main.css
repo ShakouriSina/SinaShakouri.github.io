@@ -4066,27 +4066,19 @@ input, select, textarea {
     color: #6fc3df;
 }
 
-
-.welcome-block {
-    max-width: 760px;
-    margin-top: 1.5rem;
-}
-
 .welcome-title {
-    color: #ffffff;
-    font-size: 1.05rem;
+    color: #fff;
+    font-size: 1rem;
     font-weight: 500;
-    letter-spacing: 0.02em;
-    margin-bottom: 0.6rem;
     opacity: 0.9;
+    margin: 0 0 0.5rem 0;
 }
 
 .welcome-text {
-    color: #ffffff;
-    font-size: 0.95rem;
-    font-weight: 400;
+    color: #fff;
+    font-size: 0.9rem;
     line-height: 1.7;
     opacity: 0.85;
+    margin: 0;
 }
-
 
