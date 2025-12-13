@@ -4049,21 +4049,17 @@ input, select, textarea {
 }
 
 .intro-points {
-    list-style: none;
-    padding: 0;
-    margin-top: 1.2em;
+    list-style: disc;       /* یا circle / square اگر خواستی متفاوت باشه */
+    padding-left: 1.5rem;  /* فاصله از چپ */
+    margin: 1rem 0;         /* فاصله از بالا و پایین */
 }
 
 .intro-points li {
-    margin-bottom: 6px;
-    color: #ffffff;
-    font-size: 1.02em;
-}
-
-.intro-points li::before {
-    content: "▸";
-    margin-right: 10px;
-    color: #6fc3df;
+    color: #ffffff;         /* سفید */
+    font-size: 1.25rem;     /* اندازه بزرگ و مشخص */
+    font-weight: 600;       /* Bold و چشمگیر */
+    line-height: 1.6;       /* فاصله بین خطوط */
+    margin-bottom: 0.8rem;  /* فاصله بین آیتم‌ها */
 }
 
 .welcome-title {
@@ -4081,4 +4077,5 @@ input, select, textarea {
     opacity: 0.85;
     margin: 0;
 }
+
 
