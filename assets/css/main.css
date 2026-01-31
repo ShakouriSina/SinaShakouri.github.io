@@ -4114,53 +4114,74 @@ input, select, textarea {
 
 
 
-/* ===== Minimal Gradient Theme Override ===== */
+/* ===============================
+   Minimal Academic Gradient Theme
+   =============================== */
 
-/* بک‌گراند کلی */
-body {
-    background: linear-gradient(180deg, #e0eafc, #cfdef3);
-    color: #222;
-}
-
-/* حذف رنگ‌های قبلی تم */
+/* حذف کامل رنگ‌ها و گرادیانت‌های قبلی تم */
 body,
+#wrapper,
 .wrapper,
 .wrapper.style1,
 .wrapper.style2,
 .wrapper.style3,
 #sidebar {
     background-image: none !important;
+    background-color: transparent !important;
 }
 
-/* ===== Section 1 ===== */
+/* ---------- BODY ---------- */
+body {
+    background: linear-gradient(180deg, #f8f9fb, #eef1f6);
+    color: #222;
+}
+
+/* ---------- SIDEBAR ---------- */
+#sidebar {
+    background: linear-gradient(180deg, #f1f3f7, #e6e9ef) !important;
+}
+
+/* ---------- SECTION 1 (Intro + Contact) ---------- */
 .wrapper.style1 {
     background: linear-gradient(180deg, #e0eafc, #cfdef3) !important;
 }
 
-/* ===== Section 2 ===== */
+/* ---------- SECTION 2 (Conference + Teaching) ---------- */
 .wrapper.style2 {
+    background: linear-gradient(180deg, #f2f3f7, #e7e9ee) !important;
+}
+
+/* ---------- SECTION 3 (Journal + Honors) ---------- */
+.wrapper.style3 {
     background: linear-gradient(180deg, #ddd6f3, #faaca8) !important;
 }
 
-/* ===== Section 3 (خیلی خنثی‌تر برای تعادل) ===== */
-.wrapper.style3 {
-    background: linear-gradient(180deg, #f5f7fa, #e4e7eb) !important;
-}
-
-/* فاصله تمیز بین سکشن‌ها */
+/* ---------- SPACING ---------- */
 .wrapper {
     padding: 6em 0;
 }
 
-/* متن‌ها */
+/* ---------- TYPOGRAPHY ---------- */
 h1, h2, h3, h4, h5, h6 {
     color: #111;
 }
 
-/* لینک‌ها */
+p, li {
+    color: #333;
+}
+
+/* ---------- LINKS ---------- */
 a {
     color: #444;
 }
 a:hover {
     color: #000;
 }
+
+/* ---------- CARDS (کنفرانس و ژورنال) ---------- */
+.conference-card,
+.journal-card {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(6px);
+}
+
