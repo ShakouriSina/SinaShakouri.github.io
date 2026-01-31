@@ -4079,3 +4079,35 @@ input, select, textarea {
 }
 
 
+
+.honors-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.honors-list li {
+    margin-bottom: 1.2em;
+    line-height: 1.6;
+}
+
+.honor-title {
+    font-weight: 700;
+    color: #111;
+}
+
+.honor-desc {
+    color: #444;
+}
+
+.honor-year {
+    float: right;
+    font-weight: 600;
+    color: #000;
+}
+
+.honor-certificate {
+    margin-left: 0.6em;
+    font-weight: 600;
+    font-size: 0.9em;
+}
