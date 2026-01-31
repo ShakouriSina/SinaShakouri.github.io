@@ -4132,10 +4132,6 @@ body {
     background-color: #ffffff !important;
 }
 
-/* سایدبار */
-#sidebar {
-    background-color: #f0f0f0 !important;
-}
 
 /* هدرها */
 h1, h2, h3, h4, h5, h6 {
@@ -4156,4 +4152,5 @@ a:hover {
 body {
     background-image: none !important;
 }
+
 
