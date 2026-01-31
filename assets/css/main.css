@@ -4111,3 +4111,49 @@ input, select, textarea {
     font-weight: 600;
     font-size: 0.9em;
 }
+
+
+
+
+
+/* ===== Minimal Light Theme Override ===== */
+
+/* کل بک‌گراند */
+body {
+    background-color: #f7f7f7 !important;
+    color: #222;
+}
+
+/* wrapper ها (بخش‌های اصلی) */
+.wrapper,
+.wrapper.style1,
+.wrapper.style2,
+.wrapper.style3 {
+    background-color: #ffffff !important;
+}
+
+/* سایدبار */
+#sidebar {
+    background-color: #f0f0f0 !important;
+}
+
+/* هدرها */
+h1, h2, h3, h4, h5, h6 {
+    color: #111;
+}
+
+/* لینک‌ها */
+a {
+    color: #444;
+}
+a:hover {
+    color: #000;
+}
+
+/* حذف گرادینت‌ها */
+.wrapper,
+#sidebar,
+body {
+    background-image: none !important;
+}
+
