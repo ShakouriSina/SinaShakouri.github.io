@@ -4114,26 +4114,45 @@ input, select, textarea {
 
 
 
+/* ===== Minimal Gradient Theme Override ===== */
 
-
-/* ===== Minimal Light Theme Override ===== */
-
-/* کل بک‌گراند */
+/* بک‌گراند کلی */
 body {
-    background-color: #f7f7f7 !important;
+    background: linear-gradient(180deg, #e0eafc, #cfdef3);
     color: #222;
 }
 
-/* wrapper ها (بخش‌های اصلی) */
+/* حذف رنگ‌های قبلی تم */
+body,
 .wrapper,
 .wrapper.style1,
 .wrapper.style2,
-.wrapper.style3 {
-    background-color: #ffffff !important;
+.wrapper.style3,
+#sidebar {
+    background-image: none !important;
 }
 
+/* ===== Section 1 ===== */
+.wrapper.style1 {
+    background: linear-gradient(180deg, #e0eafc, #cfdef3) !important;
+}
 
-/* هدرها */
+/* ===== Section 2 ===== */
+.wrapper.style2 {
+    background: linear-gradient(180deg, #ddd6f3, #faaca8) !important;
+}
+
+/* ===== Section 3 (خیلی خنثی‌تر برای تعادل) ===== */
+.wrapper.style3 {
+    background: linear-gradient(180deg, #f5f7fa, #e4e7eb) !important;
+}
+
+/* فاصله تمیز بین سکشن‌ها */
+.wrapper {
+    padding: 6em 0;
+}
+
+/* متن‌ها */
 h1, h2, h3, h4, h5, h6 {
     color: #111;
 }
@@ -4145,12 +4164,3 @@ a {
 a:hover {
     color: #000;
 }
-
-/* حذف گرادینت‌ها */
-.wrapper,
-#sidebar,
-body {
-    background-image: none !important;
-}
-
-
