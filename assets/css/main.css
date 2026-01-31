@@ -4114,13 +4114,12 @@ input, select, textarea {
 
 
 
-/* ===============================
-   Minimal Academic Gradient Theme
-   =============================== */
+/* ===================================
+   Custom Minimal Gradient Sections
+   =================================== */
 
-/* حذف کامل رنگ‌ها و گرادیانت‌های قبلی تم */
+/* حذف کامل رنگ‌های قبلی تم */
 body,
-#wrapper,
 .wrapper,
 .wrapper.style1,
 .wrapper.style2,
@@ -4130,58 +4129,59 @@ body,
     background-color: transparent !important;
 }
 
-/* ---------- BODY ---------- */
-body {
-    background: linear-gradient(180deg, #f8f9fb, #eef1f6);
-    color: #222;
+/* ---------- Welcome ---------- */
+#intro {
+    background: linear-gradient(180deg, #a8ff78, #78ffd6) !important;
 }
 
-/* ---------- SIDEBAR ---------- */
-#sidebar {
-    background: linear-gradient(180deg, #f1f3f7, #e6e9ef) !important;
+/* ---------- Conference ---------- */
+#one {
+    background: linear-gradient(180deg, #ede574, #e1f5c4) !important;
 }
 
-/* ---------- SECTION 1 (Intro + Contact) ---------- */
-.wrapper.style1 {
-    background: linear-gradient(180deg, #e0eafc, #cfdef3) !important;
+/* ---------- Journal ---------- */
+#two {
+    background: linear-gradient(180deg, #acb6e5, #86fde8) !important;
 }
 
-/* ---------- SECTION 2 (Conference + Teaching) ---------- */
-.wrapper.style2 {
-    background: linear-gradient(180deg, #f2f3f7, #e7e9ee) !important;
+/* ---------- Teaching ---------- */
+#teaching {
+    background: linear-gradient(180deg, #ede574, #e1f5c4) !important;
 }
 
-/* ---------- SECTION 3 (Journal + Honors) ---------- */
-.wrapper.style3 {
-    background: linear-gradient(180deg, #ddd6f3, #faaca8) !important;
+/* ---------- Honors ---------- */
+#honors {
+    background: linear-gradient(180deg, #acb6e5, #86fde8) !important;
 }
 
-/* ---------- SPACING ---------- */
-.wrapper {
+/* ---------- Contact ---------- */
+#three {
+    background: linear-gradient(180deg, #a8ff78, #78ffd6) !important;
+}
+
+/* ---------- Spacing ---------- */
+section.wrapper {
     padding: 6em 0;
 }
 
-/* ---------- TYPOGRAPHY ---------- */
+/* ---------- Typography ---------- */
 h1, h2, h3, h4, h5, h6 {
-    color: #111;
+    color: #0e0e0f;
 }
 
 p, li {
-    color: #333;
+    color: #222;
 }
 
-/* ---------- LINKS ---------- */
-a {
-    color: #444;
-}
-a:hover {
-    color: #000;
-}
-
-/* ---------- CARDS (کنفرانس و ژورنال) ---------- */
+/* ---------- Cards ---------- */
 .conference-card,
 .journal-card {
     background: rgba(255,255,255,0.95);
     backdrop-filter: blur(6px);
+}
+
+/* ---------- Smoothness ---------- */
+section.wrapper {
+    transition: background 0.6s ease;
 }
 
