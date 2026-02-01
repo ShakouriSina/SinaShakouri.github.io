@@ -4156,7 +4156,7 @@ input, select, textarea {
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;   /* کل SVG بدون زوم */
+    object-fit: cover;   /* کل SVG بدون زوم */
     z-index: 0;
     pointer-events: none;
 }
@@ -4171,6 +4171,7 @@ input, select, textarea {
 #intro {
     background: none !important;
 }
+
 
 
 
