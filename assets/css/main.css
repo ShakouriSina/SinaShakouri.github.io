@@ -4132,3 +4132,8 @@ input, select, textarea {
     background: linear-gradient(180deg, #870000, #190A05) !important;
 }
 
+
+/* ---------- Honors ---------- */
+#honors {
+    background: linear-gradient(180deg, #000080, #190A05) !important;
+}
