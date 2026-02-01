@@ -4114,3 +4114,21 @@ input, select, textarea {
 
 
 
+
+/* ===== ONLY THESE OVERRIDES – NOTHING ELSE ===== */
+
+/* ---------- Conference ---------- */
+#one {
+    background: linear-gradient(180deg, #870000, #190A05) !important;
+}
+
+/* ---------- Journal ---------- */
+#two {
+    background: linear-gradient(180deg, #000080, #190A05) !important;
+}
+
+/* ---------- Teaching ---------- */
+#teaching {
+    background: linear-gradient(180deg, #870000, #190A05) !important;
+}
+
