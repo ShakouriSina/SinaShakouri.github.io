@@ -4151,8 +4151,9 @@ input, select, textarea {
     background-image: url("images/intro-bg.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover; /* یا contain بسته به SVG */
+    background-size: contain;
 }
+
 
 
 
