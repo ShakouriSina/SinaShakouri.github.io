@@ -4145,23 +4145,22 @@ input, select, textarea {
     background-image: none !important;
 }
 
-/* --- Intro SVG via HTML --- */
+/* --- Intro SVG Background via HTML --- */
 #intro {
     position: relative;
     overflow: hidden;
 }
 
-.intro-svg {
+#intro .intro-svg {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;   /* مهم‌ترین خط */
+    object-fit: contain;   /* کل SVG بدون زوم */
     z-index: 0;
     pointer-events: none;
 }
 
-/* محتوای متن روی SVG */
 #intro .inner {
     position: relative;
     z-index: 1;
@@ -4169,8 +4168,9 @@ input, select, textarea {
 
 
 
-
-
+#intro {
+    background: none !important;
+}
 
 
 
