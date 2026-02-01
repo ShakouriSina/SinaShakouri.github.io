@@ -4137,3 +4137,12 @@ input, select, textarea {
 #honors {
     background: linear-gradient(180deg, #000080, #190A05) !important;
 }
+
+
+/* --- Sidebar solid color override --- */
+#sidebar {
+    background-color: #1d0029 !important;
+    background-image: none !important;
+}
+
+
