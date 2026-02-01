@@ -4147,11 +4147,13 @@ input, select, textarea {
 
 /* --- Intro SVG Background --- */
 #intro {
+	background-color: transparent !important;
     background-image: url("images/intro-bg.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; /* یا contain بسته به SVG */
 }
+
 
 
 
