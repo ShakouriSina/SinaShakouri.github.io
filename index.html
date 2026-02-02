@@ -52,7 +52,7 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-<section<section id="intro" class="wrapper style1 fullscreen fade-up">
+<section id="intro" class="wrapper style1 fullscreen fade-up">
     <div class="inner" style="text-align:center;">
 
         <!-- Greeting -->
@@ -82,9 +82,9 @@
             <span id="typing-name"></span><span id="cursor" style="opacity:1;">|</span>
         </h1>
 
-        <!-- Professional Lines -->
+        <!-- Professional Lines (Unified Style) -->
         <div id="intro-lines" style="
-            max-width: 880px;
+            max-width: 1100px;
             margin: 0 auto;
             opacity: 0;
             transition: opacity 1.8s ease;
@@ -93,9 +93,10 @@
             <p style="
                 font-family: 'DM Serif Display', serif;
                 color: #ffffff;
-                font-size: 1.45em;
-                letter-spacing: 0.6px;
-                margin-bottom: 0.8em;
+                font-size: 1.3em;
+                letter-spacing: 0.45px;
+                margin-bottom: 0.7em;
+                white-space: nowrap;
             ">
                 — Postgraduate Researcher —
             </p>
@@ -103,9 +104,10 @@
             <p style="
                 font-family: 'DM Serif Display', serif;
                 color: #ffffff;
-                font-size: 1.25em;
-                letter-spacing: 0.5px;
-                margin-bottom: 0.8em;
+                font-size: 1.3em;
+                letter-spacing: 0.45px;
+                margin-bottom: 0.7em;
+                white-space: nowrap;
             ">
                 — Data-Driven Modeling & Machine Learning Applications for Energy and Subsurface Systems —
             </p>
@@ -113,20 +115,22 @@
             <p style="
                 font-family: 'DM Serif Display', serif;
                 color: #ffffff;
-                font-size: 1.25em;
-                letter-spacing: 0.5px;
+                font-size: 1.3em;
+                letter-spacing: 0.45px;
                 margin-bottom: 2.2em;
+                white-space: nowrap;
             ">
                 — Scientific Programming & Software Development —
             </p>
 
         </div>
 
-        <!-- Warm sentence -->
+        <!-- Warm sentence (Bold + Larger) -->
         <p id="warm-line" style="
             font-family: 'DM Serif Display', serif;
             color: #ffffff;
-            font-size: 1.15em;
+            font-size: 1.25em;
+            font-weight: 600;
             opacity: 0;
             transition: opacity 2s ease;
         ">
@@ -146,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
         g.style.transform = "translateY(0)";
     }, 300);
 
-    // Typing effect
+    // Typing effect (slower + classy)
     const text = "This is Sina Shakouri";
     const typingEl = document.getElementById("typing-name");
     const cursor = document.getElementById("cursor");
@@ -156,14 +160,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (index < text.length) {
             typingEl.innerHTML += text.charAt(index);
             index++;
-            setTimeout(typeEffect, 95); // کندتر و طبیعی‌تر
+            setTimeout(typeEffect, 110); // کمی کندتر و لوکس‌تر
         } else {
-            // Show professional lines
             setTimeout(() => {
                 document.getElementById("intro-lines").style.opacity = "1";
             }, 500);
 
-            // Show warm line
             setTimeout(() => {
                 document.getElementById("warm-line").style.opacity = "0.9";
             }, 1200);
@@ -175,12 +177,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Cursor blink
     setInterval(() => {
         cursor.style.opacity = (cursor.style.opacity === "1") ? "0" : "1";
-    }, 500);
+    }, 520);
 
 });
 </script>
-
-
 
 
 
@@ -590,6 +590,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
