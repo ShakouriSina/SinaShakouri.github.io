@@ -53,12 +53,18 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 <section id="intro" class="wrapper style1 fullscreen fade-up">
-    <div class="inner" style="text-align:center;">
+    <div class="inner" style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  /* محتوا بالا و پایین فاصله می‌گیره */
+        height: 100%;
+        text-align: center;
+    ">
 
         <!-- Greeting -->
         <p id="greeting" style="
             font-family: 'DM Serif Display', serif;
-            font-size: 2.5em;
+            font-size: 2.2em;
             color: #ffffff;
             margin-bottom: 0.25em;
             letter-spacing: 1.2px;
@@ -82,7 +88,7 @@
             <span id="typing-name"></span><span id="cursor" style="opacity:1;">|</span>
         </h1>
 
-        <!-- Professional Lines (Unified Style) -->
+        <!-- Professional Lines -->
         <div id="intro-lines" style="
             max-width: 1100px;
             margin: 0 auto;
@@ -112,34 +118,34 @@
                 — Data-Driven Modeling & Machine Learning Applications for Energy and Subsurface Systems —
             </p>
 
-			<p style="
-			    font-family: 'DM Serif Display', serif;
-			    color: #ffffff;
-			    font-size: 1.3em;
-			    letter-spacing: 0.45px;
-			    margin-bottom: 20vh;   /* فاصله بزرگ و ریسپانسیو تا ته سکشن */
-			    white-space: nowrap;
-			">
-			    — Scientific Programming & Software Development —
-			</p>
-
+            <p style="
+                font-family: 'DM Serif Display', serif;
+                color: #ffffff;
+                font-size: 1.3em;
+                letter-spacing: 0.45px;
+                margin-bottom: 0;
+                white-space: nowrap;
+            ">
+                — Scientific Programming & Software Development —
+            </p>
 
         </div>
 
-<p id="warm-line" style="
-    font-family: 'DM Serif Display', serif;
-    color: #ffffff;
-    font-size: 1.25em;
-    font-weight: 600;
-    opacity: 0;
-    transition: opacity 2s ease;
+        <!-- Warm sentence (ته سکشن) -->
+        <p id="warm-line" style="
+            font-family: 'DM Serif Display', serif;
+            color: #ffffff;
+            font-size: 1.25em;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 2s ease;
+            margin-bottom: 0;  /* ته flex */
+        ">
+            Glad to have you here.
+        </p>
 
-    /* این دو خط کلید کار هستن */
-    margin-top: 28vh;     /* هل دادن جدی به سمت پایین */
-    margin-bottom: 0;
-">
-    Glad to have you here.
-</p>
+    </div>
+</section>
 
 
     </div>
@@ -595,6 +601,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
