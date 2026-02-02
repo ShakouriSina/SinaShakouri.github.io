@@ -52,15 +52,15 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-<section id="intro" class="wrapper style1 fullscreen fade-up">
+<section<section id="intro" class="wrapper style1 fullscreen fade-up">
     <div class="inner" style="text-align:center;">
 
         <!-- Greeting -->
         <p id="greeting" style="
             font-family: 'DM Serif Display', serif;
-            font-size: 2em;
+            font-size: 2.2em;
             color: #ffffff;
-            margin-bottom: 0.2em;
+            margin-bottom: 0.25em;
             letter-spacing: 1.2px;
             opacity: 0;
             transform: translateY(10px);
@@ -70,30 +70,32 @@
         </p>
 
         <!-- Typing Name -->
-        <h1 id="typing-name" style="
+        <h1 style="
             font-family: 'DM Serif Display', serif;
-            font-size: 3.8em;
+            font-size: 4.1em;
             color: #ffffff;
             margin-top: 0;
-            margin-bottom: 1.5em;
+            margin-bottom: 1.6em;
             font-weight: 400;
             min-height: 1.2em;
-        "></h1>
+        ">
+            <span id="typing-name"></span><span id="cursor" style="opacity:1;">|</span>
+        </h1>
 
         <!-- Professional Lines -->
         <div id="intro-lines" style="
-            max-width: 820px;
+            max-width: 880px;
             margin: 0 auto;
             opacity: 0;
-            transition: opacity 1.5s ease;
+            transition: opacity 1.8s ease;
         ">
 
             <p style="
                 font-family: 'DM Serif Display', serif;
                 color: #ffffff;
-                font-size: 1.25em;
-                letter-spacing: 0.5px;
-                margin-bottom: 0.6em;
+                font-size: 1.45em;
+                letter-spacing: 0.6px;
+                margin-bottom: 0.8em;
             ">
                 — Postgraduate Researcher —
             </p>
@@ -101,19 +103,19 @@
             <p style="
                 font-family: 'DM Serif Display', serif;
                 color: #ffffff;
-                font-size: 1.15em;
-                letter-spacing: 0.4px;
-                margin-bottom: 0.6em;
+                font-size: 1.25em;
+                letter-spacing: 0.5px;
+                margin-bottom: 0.8em;
             ">
-                ◦ Data-Driven Modeling & Machine Learning Applications for Energy and Subsurface Systems ◦
+                — Data-Driven Modeling & Machine Learning Applications for Energy and Subsurface Systems —
             </p>
 
             <p style="
                 font-family: 'DM Serif Display', serif;
                 color: #ffffff;
-                font-size: 1.15em;
-                letter-spacing: 0.4px;
-                margin-bottom: 2em;
+                font-size: 1.25em;
+                letter-spacing: 0.5px;
+                margin-bottom: 2.2em;
             ">
                 — Scientific Programming & Software Development —
             </p>
@@ -124,7 +126,7 @@
         <p id="warm-line" style="
             font-family: 'DM Serif Display', serif;
             color: #ffffff;
-            font-size: 1.05em;
+            font-size: 1.15em;
             opacity: 0;
             transition: opacity 2s ease;
         ">
@@ -147,31 +149,36 @@ document.addEventListener("DOMContentLoaded", function () {
     // Typing effect
     const text = "This is Sina Shakouri";
     const typingEl = document.getElementById("typing-name");
+    const cursor = document.getElementById("cursor");
     let index = 0;
 
     function typeEffect() {
         if (index < text.length) {
             typingEl.innerHTML += text.charAt(index);
             index++;
-            setTimeout(typeEffect, 70);  // سرعت تایپ حرفه‌ای و آرام
+            setTimeout(typeEffect, 95); // کندتر و طبیعی‌تر
         } else {
             // Show professional lines
             setTimeout(() => {
                 document.getElementById("intro-lines").style.opacity = "1";
-            }, 400);
+            }, 500);
 
             // Show warm line
             setTimeout(() => {
                 document.getElementById("warm-line").style.opacity = "0.9";
-            }, 1000);
+            }, 1200);
         }
     }
 
-    setTimeout(typeEffect, 800);
+    setTimeout(typeEffect, 900);
+
+    // Cursor blink
+    setInterval(() => {
+        cursor.style.opacity = (cursor.style.opacity === "1") ? "0" : "1";
+    }, 500);
 
 });
 </script>
-
 
 
 
@@ -583,6 +590,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
