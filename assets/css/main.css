@@ -4199,13 +4199,14 @@ input, select, textarea {
         radial-gradient(
             circle at center,
             #b80217 0%,
-            #63010c 45%,
+            #470109 45%,
             #2e1b1b 100%
         ) !important;
 
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 
 
 
