@@ -76,8 +76,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const closeBtn = document.querySelector(".lightbox-close");
-    const zoomInBtn = document.getElementById("zoom-in");
-    const zoomOutBtn = document.getElementById("zoom-out");
+    const zoomInBtn = document.querySelector(".lightbox-zoom-in");
+    const zoomOutBtn = document.querySelector(".lightbox-zoom-out");
 
     let scale = 1;
 
@@ -92,8 +92,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Close
+    function closeLightbox() {
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+        scale = 1;
+    }
+
     closeBtn.addEventListener("click", closeLightbox);
+
     lightbox.addEventListener("click", (e) => {
         if (e.target === lightbox) closeLightbox();
     });
@@ -102,20 +108,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (e.key === "Escape") closeLightbox();
     });
 
-    function closeLightbox() {
-        lightbox.classList.remove("active");
-        lightboxImg.src = "";
-        scale = 1;
-    }
-
-    // Zoom In
     zoomInBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         scale += 0.15;
         lightboxImg.style.transform = `scale(${scale})`;
     });
 
-    // Zoom Out
     zoomOutBtn.addEventListener("click", (e) => {
         e.stopPropagation();
         scale = Math.max(0.5, scale - 0.15);
@@ -124,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+
 
 		
 <!-- Conference -->
@@ -520,4 +519,5 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
