@@ -244,141 +244,51 @@ document.addEventListener("DOMContentLoaded", function () {
 				    </div>
 				</section>
 
-<!-- One: Conference Publications  -->
 <section id="one" class="wrapper style2">
     <div class="inner">
-        <h2 style="text-align:center; margin-bottom:2em; font-weight:700;">Conference Publications</h2>
+        <h2 style="text-align:center;">Conference Publications</h2>
 
-        <!-- Conference Card 1 -->
-        <div class="conference-card">
-            <a href="images/SinaShakouri_AI_OilGas_Conference1.png" target="_blank">
-                <img src="images/SinaShakouri_AI_OilGas_Conference1.png" alt="Certificate 1" class="certificate-img"/>
-            </a>
-            <div class="conference-info">
-                <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3>
-                <p><span class="label">Paper:</span> <em>A review of the application of machine learning methods in the estimation of formation damage caused by different processes in oil and gas production</em></p>
-            </div>
-        </div>
-
-        <!-- Conference Card 2 -->
-        <div class="conference-card">
-            <a href="images/SinaShakouri_AI_OilGas_Conference2.png" target="_blank">
-                <img src="images/SinaShakouri_AI_OilGas_Conference2.png" alt="Certificate 2" class="certificate-img"/>
-            </a>
-            <div class="conference-info">
-                <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3>
-                <p><span class="label">Paper:</span> <em>Prediction of asphaltic sludge formation in oil reservoir acidizing operation using machine learning model: Extreme gradient boosting</em></p>
-            </div>
-        </div>
-
-        <!-- Conference Card 3 -->
-        <div class="conference-card">
-            <a href="images/SinaShakouri_ICECE_Conference.jpg" target="_blank">
-                <img src="images/SinaShakouri_ICECE_Conference.jpg" alt="Certificate 3" class="certificate-img"/>
-            </a>
-            <div class="conference-info">
-                <h3>12th International Chemical Engineering Congress & Exhibition</h3>
-                <p><span class="label">Paper:</span> <em>Optimization of Water Injection Well Acidizing Process: A Sandstone Reservoir Scenario</em></p>
-            </div>
-        </div>
-
-        <!-- Conference Card 4 -->
-        <div class="conference-card">
-            <a href="images/SinaShakouri_AISOFT_Conference.png" target="_blank">
-                <img src="images/SinaShakouri_AISOFT_Conference.png" alt="Certificate 4" class="certificate-img"/>
-            </a>
-            <div class="conference-info">
-                <h3>National Conference of Artificial Intelligence and Software Engineering</h3>
-                <p><span class="label">Paper:</span> <em>Classification of Acid–Oil Emulsion Stability During Acidizing Operations in Oil Reservoirs Using Machine Learning Models</em></p>
-            </div>
-        </div>
-
+<!-- Conference Card 1 --> <div class="conference-card"> <a href="images/SinaShakouri_AI_OilGas_Conference1.png" target="_blank"> <img src="images/SinaShakouri_AI_OilGas_Conference1.png" alt="Certificate 1" class="certificate-img"/> </a> <div class="conference-info"> <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3> <p><span class="label">Paper:</span> <em>A review of the application of machine learning methods in the estimation of formation damage caused by different processes in oil and gas production</em></p> </div> </div> <!-- Conference Card 2 --> <div class="conference-card"> <a href="images/SinaShakouri_AI_OilGas_Conference2.png" target="_blank"> <img src="images/SinaShakouri_AI_OilGas_Conference2.png" alt="Certificate 2" class="certificate-img"/> </a> <div class="conference-info"> <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3> <p><span class="label">Paper:</span> <em>Prediction of asphaltic sludge formation in oil reservoir acidizing operation using machine learning model: Extreme gradient boosting</em></p> </div> </div> <!-- Conference Card 3 --> <div class="conference-card"> <a href="images/SinaShakouri_ICECE_Conference.jpg" target="_blank"> <img src="images/SinaShakouri_ICECE_Conference.jpg" alt="Certificate 3" class="certificate-img"/> </a> <div class="conference-info"> <h3>12th International Chemical Engineering Congress & Exhibition</h3> <p><span class="label">Paper:</span> <em>Optimization of Water Injection Well Acidizing Process: A Sandstone Reservoir Scenario</em></p> </div> </div> <!-- Conference Card 4 --> <div class="conference-card"> <a href="images/SinaShakouri_AISOFT_Conference.png" target="_blank"> <img src="images/SinaShakouri_AISOFT_Conference.png" alt="Certificate 4" class="certificate-img"/> </a> <div class="conference-info"> <h3>National Conference of Artificial Intelligence and Software Engineering</h3> <p><span class="label">Paper:</span> <em>Classification of Acid–Oil Emulsion Stability During Acidizing Operations in Oil Reservoirs Using Machine Learning Models</em></p> </div> </div>
     </div>
 </section>
-/* انیمیشن کارت‌ها */
-.conference-card {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    border-radius: 14px;
-    margin-bottom: 2em;
-    padding: 1.6em;
-    min-height: 190px;
-    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
-    transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.8s ease;
 
-    opacity: 0;
-    transform: translateX(-60px);
-}
+</div>
 
-.conference-card:nth-child(even) {
-    transform: translateX(60px);
-}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-.conference-card.visible {
-    opacity: 1;
-    transform: translateX(0);
-}
+    // تایپ اسم
+    const text = "This is Sina Shakouri";
+    const typingEl = document.getElementById("typing-name");
+    const cursor = document.getElementById("cursor");
+    let index = 0;
 
-.conference-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 32px rgba(0,0,0,0.28);
-}
-
-/* عکس */
-.certificate-img {
-    width: 180px;
-    height: 130px;
-    border-radius: 10px;
-    margin-right: 1.8em;
-    cursor: pointer;
-    object-fit: cover;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-}
-
-/* متن */
-.conference-info h3 {
-    margin: 0 0 0.5em;
-    font-size: 1.2em;
-    font-weight: 600;
-    color: #120406;
-    line-height: 1.4;
-}
-
-.conference-info p {
-    margin: 0;
-    font-size: 1.05em;
-    color: #2a2a2a;
-    line-height: 1.65;
-}
-
-.label {
-    font-weight: 600;
-    color: #000;
-}
-
-/* موبایل */
-@media (max-width: 768px) {
-    .conference-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 1.4em;
-        transform: translateY(40px);
+    function typeEffect() {
+        if (index < text.length) {
+            typingEl.innerHTML += text.charAt(index++);
+            setTimeout(typeEffect, 110);
+        } else {
+            document.getElementById("intro-lines").style.opacity = "1";
+            document.getElementById("warm-line").style.opacity = "1";
+        }
     }
+    setTimeout(typeEffect, 800);
 
-    .conference-card.visible {
-        transform: translateY(0);
-    }
+    setInterval(() => {
+        cursor.style.opacity = cursor.style.opacity === "1" ? "0" : "1";
+    }, 500);
 
-    .certificate-img {
-        margin-right: 0;
-        margin-bottom: 1em;
-        width: 240px;
-        height: 160px;
-    }
-}
+    // انیمیشن کارت‌ها
+    const cards = document.querySelectorAll(".conference-card");
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add("visible");
+        });
+    }, { threshold: 0.2 });
 
-
+    cards.forEach(card => observer.observe(card));
+});
+</script>
 
 		
 
@@ -666,6 +576,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
