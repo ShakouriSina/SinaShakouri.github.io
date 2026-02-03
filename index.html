@@ -197,6 +197,48 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+		/* بک‌گراند فول‌اسکرین حرفه‌ای سکشن Conference */
+#one {
+    min-height: 100vh;
+    background:
+        radial-gradient(
+            circle at center,
+            #b80217 0%,
+            #63010c 45%,
+            #2e1b1b 100%
+        ) !important;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+	#one,
+#one h2,
+#one h3,
+#one p {
+    font-family: 'DM Serif Display', serif;
+}
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".conference-card");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+		
+
 				    </div>
 				</section>
 
@@ -251,51 +293,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
     </div>
 </section>
-
-<style>
-/* ----- CARD STYLE ----- */
+/* انیمیشن کارت‌ها */
 .conference-card {
     display: flex;
     align-items: center;
     background: #ffffff;
-    border-radius: 12px;
-    margin-bottom: 1.8em;
-    padding: 1.5em;
-    min-height: 190px;            /* کارت‌ها یک ارتفاع ثابت دارند */
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 14px;
+    margin-bottom: 2em;
+    padding: 1.6em;
+    min-height: 190px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, opacity 0.8s ease;
+
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+.conference-card:nth-child(even) {
+    transform: translateX(60px);
+}
+
+.conference-card.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .conference-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.28);
 }
 
-/* ----- IMAGE FIXED SIZE ----- */
+/* عکس */
 .certificate-img {
     width: 180px;
-    height: 130px;        /* ارتفاع ثابت برای یکسان‌سازی کارت‌ها */
-    border-radius: 8px;
+    height: 130px;
+    border-radius: 10px;
     margin-right: 1.8em;
     cursor: pointer;
-    object-fit: cover;    /* عکس عمودی = مثل افقی دیده میشه */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    object-fit: cover;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
-/* ----- TEXT STYLE ----- */
+/* متن */
 .conference-info h3 {
-    margin: 0 0 0.4em;
-    font-size: 1.15em;
-    font-weight: 700;     /* حرفه‌ای‌تر */
-    color: #0e0e0f;
-    line-height: 1.35;
+    margin: 0 0 0.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #120406;
+    line-height: 1.4;
 }
 
 .conference-info p {
     margin: 0;
-    font-size: 0.98em;
-    color: #444;
-    line-height: 1.55;
+    font-size: 1.05em;
+    color: #2a2a2a;
+    line-height: 1.65;
 }
 
 .label {
@@ -303,13 +355,19 @@ document.addEventListener("DOMContentLoaded", function () {
     color: #000;
 }
 
-/* Mobile */
+/* موبایل */
 @media (max-width: 768px) {
     .conference-card {
         flex-direction: column;
         text-align: center;
-        padding: 1.2em;
+        padding: 1.4em;
+        transform: translateY(40px);
     }
+
+    .conference-card.visible {
+        transform: translateY(0);
+    }
+
     .certificate-img {
         margin-right: 0;
         margin-bottom: 1em;
@@ -317,7 +375,10 @@ document.addEventListener("DOMContentLoaded", function () {
         height: 160px;
     }
 }
-</style>
+
+
+
+		
 
 <!-- Two: Journal Publications -->
 <section id="two" class="wrapper style3 fade-up">
@@ -603,6 +664,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
