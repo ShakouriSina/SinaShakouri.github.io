@@ -4499,3 +4499,27 @@ input, select, textarea {
 }
 
 
+/* حذف فاصله اضافی بالای سکشن Conference */
+#one {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* حذف فاصله پیش‌فرض inner */
+#one .inner {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* حذف فاصله بالای تیتر */
+#one h2,
+.section-title-wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* فاصله خیلی کم و کنترل‌شده از بالای سکشن */
+.section-title-wrapper {
+    margin-top: 0.2rem !important;   /* حداقل فاصله ممکن */
+}
+
