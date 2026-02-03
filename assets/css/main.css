@@ -4271,9 +4271,9 @@ input, select, textarea {
 
 .intro-greeting {
     font-family: 'DM Serif Display', serif;
-    font-size: 2.2em;
+    font-size: 3em;
     color: #fff;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.5em;
     letter-spacing: 1.2px;
     opacity: 0;
     transform: translateY(10px);
@@ -4378,8 +4378,8 @@ input, select, textarea {
 
 /* فاصله بهتر برای عنوان سکشن کنفرانس */
 #one h2 {
-    margin-bottom: 2.5em !important;
-    margin-top: 0.5em !important;
+    margin-bottom: 1 em !important;
+    margin-top: 0 em !important;
     font-weight: 800;
     letter-spacing: 0.5px;
 }
@@ -4396,4 +4396,5 @@ input, select, textarea {
     color: #ffffff;
     margin-bottom: 0.7em;
 }
+
 
