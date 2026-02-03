@@ -4401,56 +4401,36 @@ input, select, textarea {
 /* ================================
    PROFESSIONAL SECTION TITLE (CONFERENCE)
    ================================ */
-
-.section-title-wrapper {
-    text-align: center;
-    margin-top: -2em;        /* میره بالاتر */
-    margin-bottom: 3em;     /* فاصله قشنگ از کارت‌ها */
-}
-
 .section-title-box {
     display: inline-block;
     padding: 0.75em 2.4em;
-    background: #ffffff;
-    color: #000000;
-    border-radius: 999px;   /* بیضی شیک */
+    background: transparent;       /* سفید برداشته شد */
+    color: #ffffff;                /* متن سفید */
+    border-radius: 0;              /* کپسول برداشته شد */
     font-size: 1.6rem;
     font-weight: 900;
     letter-spacing: 0.6px;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.22);
     position: relative;
+    box-shadow: none;              /* سایه برداشته شد */
 }
 
-/* خط ظریف تزئینی بالا و پایین */
+/* دو خط بالا و پایین */
 .section-title-box::before,
 .section-title-box::after {
     content: "";
     position: absolute;
-    left: -45px;
-    right: -45px;
-    height: 1px;
-    background: rgba(255,255,255,0.5);
+    left: 0;
+    right: 0;
+    height: 3px;                   /* ضخیم‌تر از قبل */
+    background: #ffffff;            /* رنگ سفید */
 }
 
 .section-title-box::before {
-    top: -12px;
+    top: 0;
 }
 
 .section-title-box::after {
-    bottom: -12px;
-}
-
-/* موبایل */
-@media (max-width: 768px) {
-    .section-title-wrapper {
-        margin-top: -1em;
-        margin-bottom: 2.2em;
-    }
-
-    .section-title-box {
-        font-size: 1.35rem;
-        padding: 0.65em 1.8em;
-    }
+    bottom: 0;
 }
 
 
@@ -4485,7 +4465,7 @@ input, select, textarea {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 0.9rem;
+    font-size: 3.5 rem;
     opacity: 0.8;
 }
 
@@ -4509,3 +4489,4 @@ input, select, textarea {
         margin-bottom: 2em;
     }
 }
+
