@@ -4324,3 +4324,24 @@ input, select, textarea {
 }
 
 
+/* متن کارت‌های کنفرانس باید مشکی باشه */
+.conference-card,
+.conference-card h3,
+.conference-card p,
+.conference-card strong,
+.conference-card em {
+    color: #000 !important;
+}
+
+.conference-info {
+    color: #111 !important;
+}
+
+.conference-info h3 {
+    color: #000 !important;
+}
+
+.conference-info p {
+    color: #111 !important;
+}
+
