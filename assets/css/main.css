@@ -4657,3 +4657,31 @@ input, select, textarea {
     opacity: 0.7;
 }
 
+
+/* Social Icons Bottom of Sidebar */
+.sidebar-socials {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.sidebar-socials a img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.sidebar-socials a:hover img {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+
