@@ -4525,3 +4525,61 @@ input, select, textarea {
 
 
 
+/* Lightbox Overlay */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.88);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+    z-index: 9999;
+}
+
+/* Active state */
+.lightbox.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Image */
+.lightbox img {
+    max-width: 90%;
+    max-height: 88vh;
+    border-radius: 14px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.7);
+    animation: zoomIn 0.35s ease;
+}
+
+/* Big stylish close button */
+.lightbox-close {
+    position: fixed;
+    top: 22px;
+    right: 28px;
+    font-size: 3.2rem;
+    line-height: 1;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.lightbox-close:hover {
+    transform: scale(1.15) rotate(8deg);
+    color: #ff4d4d;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.92);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
