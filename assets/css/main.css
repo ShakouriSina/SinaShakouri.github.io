@@ -4535,7 +4535,7 @@ input, select, textarea {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;
-    z-index: 999999;
+    z-index: 999999; /* بالاتر از سایدبار */
 }
 
 .lightbox.active {
@@ -4549,14 +4549,12 @@ input, select, textarea {
     max-height: 88vh;
     border-radius: 14px;
     box-shadow: 0 25px 70px rgba(0,0,0,0.7);
-    transition: transform 0.25s ease;
 }
 
-/* Controls (X, +, -) */
-.lightbox-close,
-.lightbox-zoom-in,
-.lightbox-zoom-out {
+/* Close Button */
+.lightbox-close {
     position: fixed;
+    top: 24px;
     right: 26px;
     font-size: 3.2rem;
     font-weight: 400;
@@ -4567,15 +4565,7 @@ input, select, textarea {
     z-index: 1000000;
 }
 
-/* Positions */
-.lightbox-close { top: 24px; }
-.lightbox-zoom-in { top: 76px; }
-.lightbox-zoom-out { top: 128px; }
-
-.lightbox-close:hover,
-.lightbox-zoom-in:hover,
-.lightbox-zoom-out:hover {
+.lightbox-close:hover {
     transform: scale(1.15);
     color: #ff4d4d;
 }
-
