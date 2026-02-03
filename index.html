@@ -18,6 +18,25 @@
 	    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 
+
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".conference-card");
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    cards.forEach(card => observer.observe(card));
+});
+</script>
+
 	
 	
 	<body class="is-preload">
@@ -664,6 +683,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
