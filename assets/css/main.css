@@ -4403,7 +4403,7 @@ input, select, textarea {
    ================================ */
 .section-title-wrapper {
     text-align: center;        /* وسط‌چین افقی */
-    margin-top: 0.1rem;        /* حداقل فاصله از بالا */
+    margin-top: 1rem;        /* حداقل فاصله از بالا */
     margin-bottom: 4rem;     /* فاصله منطقی از کارت‌ها */
 }
 
@@ -4520,26 +4520,25 @@ input, select, textarea {
 
 /* فاصله خیلی کم و کنترل‌شده از بالای سکشن */
 .section-title-wrapper {
-    margin-top: 0.5rem !important;   /* حداقل فاصله ممکن */
+    margin-top: 0rem !important;   /* حداقل فاصله ممکن */
 }
-
 
 
 /* Lightbox Overlay */
 .lightbox {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.88);
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;
-    z-index: 9999;
+    z-index: 999999; /* بالاتر از سایدبار */
 }
 
-/* Active state */
+/* Active */
 .lightbox.active {
     opacity: 1;
     pointer-events: auto;
@@ -4547,39 +4546,59 @@ input, select, textarea {
 
 /* Image */
 .lightbox img {
-    max-width: 90%;
+    max-width: 88%;
     max-height: 88vh;
     border-radius: 14px;
     box-shadow: 0 25px 70px rgba(0,0,0,0.7);
-    animation: zoomIn 0.35s ease;
+    transition: transform 0.25s ease;
 }
 
-/* Big stylish close button */
+/* Close button */
 .lightbox-close {
     position: fixed;
-    top: 22px;
-    right: 28px;
+    top: 24px;
+    right: 26px;
     font-size: 3.2rem;
-    line-height: 1;
     color: #ffffff;
     cursor: pointer;
     user-select: none;
     transition: transform 0.2s ease, color 0.2s ease;
+    z-index: 1000000;
 }
 
 .lightbox-close:hover {
-    transform: scale(1.15) rotate(8deg);
+    transform: scale(1.15) rotate(6deg);
     color: #ff4d4d;
 }
 
-@keyframes zoomIn {
-    from {
-        transform: scale(0.92);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+/* Zoom controls */
+.lightbox-controls {
+    position: fixed;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 1000000;
+}
+
+.lightbox-controls button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255,255,255,0.92);
+    color: #111;
+    font-size: 1.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.lightbox-controls button:hover {
+    transform: scale(1.12);
+    background: #ffffff;
 }
 
