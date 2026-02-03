@@ -69,57 +69,103 @@
             </div>
         </section>
 
-        <!-- Conference -->
-        <section id="one" class="wrapper style2">
-            <div class="inner">
-<div class="section-title-wrapper">
-    <h2 class="section-title-box">Conference Publications</h2>
-</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-                <div class="conference-card">
-                    <a href="images/SinaShakouri_AI_OilGas_Conference1.png" target="_blank">
-                        <img src="images/SinaShakouri_AI_OilGas_Conference1.png" class="certificate-img" alt="Certificate 1">
-                    </a>
-                    <div class="conference-info">
-                        <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3>
-                        <p><strong>Paper:</strong> <em>A review of the application of machine learning methods in the estimation of formation damage caused by different processes in oil and gas production</em></p>
-                    </div>
-                </div>
+    const triggers = document.querySelectorAll(".lightbox-trigger");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
 
-                <div class="conference-card">
-                    <a href="images/SinaShakouri_AI_OilGas_Conference2.png" target="_blank">
-                        <img src="images/SinaShakouri_AI_OilGas_Conference2.png" class="certificate-img" alt="Certificate 2">
-                    </a>
-                    <div class="conference-info">
-                        <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3>
-                        <p><strong>Paper:</strong> <em>Prediction of asphaltic sludge formation in oil reservoir acidizing operation using machine learning model: Extreme gradient boosting</em></p>
-                    </div>
-                </div>
+    triggers.forEach(trigger => {
+        trigger.addEventListener("click", function (e) {
+            e.preventDefault();
+            const imgSrc = this.getAttribute("href");
+            lightboxImg.src = imgSrc;
+            lightbox.classList.add("active");
+        });
+    });
 
-                <div class="conference-card">
-                    <a href="images/SinaShakouri_ICECE_Conference.jpg" target="_blank">
-                        <img src="images/SinaShakouri_ICECE_Conference.jpg" class="certificate-img" alt="Certificate 3">
-                    </a>
-                    <div class="conference-info">
-                        <h3>12th International Chemical Engineering Congress & Exhibition</h3>
-                        <p><strong>Paper:</strong> <em>Optimization of Water Injection Well Acidizing Process: A Sandstone Reservoir Scenario</em></p>
-                    </div>
-                </div>
+    // بستن با ضربدر
+    closeBtn.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+    });
 
-                <div class="conference-card">
-                    <a href="images/SinaShakouri_AISOFT_Conference.png" target="_blank">
-                        <img src="images/SinaShakouri_AISOFT_Conference.png" class="certificate-img" alt="Certificate 4">
-                    </a>
-                    <div class="conference-info">
-                        <h3>National Conference of Artificial Intelligence and Software Engineering</h3>
-                        <p><strong>Paper:</strong> <em>Classification of Acid–Oil Emulsion Stability During Acidizing Operations in Oil Reservoirs Using Machine Learning Models</em></p>
-                    </div>
-                </div>
+    // بستن با کلیک روی فضای تیره
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove("active");
+            lightboxImg.src = "";
+        }
+    });
 
+    // بستن با ESC
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            lightbox.classList.remove("active");
+            lightboxImg.src = "";
+        }
+    });
+
+});
+</script>
+<!-- Conference -->
+<section id="one" class="wrapper style2">
+    <div class="inner">
+        <div class="section-title-wrapper">
+            <h2 class="section-title-box">Conference Publications</h2>
+        </div>
+
+        <div class="conference-card">
+            <a href="images/SinaShakouri_AI_OilGas_Conference1.png" class="lightbox-trigger">
+                <img src="images/SinaShakouri_AI_OilGas_Conference1.png" class="certificate-img" alt="Certificate 1">
+            </a>
+            <div class="conference-info">
+                <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3>
+                <p><strong>Paper:</strong> <em>A review of the application of machine learning methods in the estimation of formation damage caused by different processes in oil and gas production</em></p>
             </div>
-        </section>
+        </div>
+
+        <div class="conference-card">
+            <a href="images/SinaShakouri_AI_OilGas_Conference2.png" class="lightbox-trigger">
+                <img src="images/SinaShakouri_AI_OilGas_Conference2.png" class="certificate-img" alt="Certificate 2">
+            </a>
+            <div class="conference-info">
+                <h3>The First International Conference on Artificial Intelligence, Data Science and Digital Transformation in Oil & Gas Industry</h3>
+                <p><strong>Paper:</strong> <em>Prediction of asphaltic sludge formation in oil reservoir acidizing operation using machine learning model: Extreme gradient boosting</em></p>
+            </div>
+        </div>
+
+        <div class="conference-card">
+            <a href="images/SinaShakouri_ICECE_Conference.jpg" class="lightbox-trigger">
+                <img src="images/SinaShakouri_ICECE_Conference.jpg" class="certificate-img" alt="Certificate 3">
+            </a>
+            <div class="conference-info">
+                <h3>12th International Chemical Engineering Congress & Exhibition</h3>
+                <p><strong>Paper:</strong> <em>Optimization of Water Injection Well Acidizing Process: A Sandstone Reservoir Scenario</em></p>
+            </div>
+        </div>
+
+        <div class="conference-card">
+            <a href="images/SinaShakouri_AISOFT_Conference.png" class="lightbox-trigger">
+                <img src="images/SinaShakouri_AISOFT_Conference.png" class="certificate-img" alt="Certificate 4">
+            </a>
+            <div class="conference-info">
+                <h3>National Conference of Artificial Intelligence and Software Engineering</h3>
+                <p><strong>Paper:</strong> <em>Classification of Acid–Oil Emulsion Stability During Acidizing Operations in Oil Reservoirs Using Machine Learning Models</em></p>
+            </div>
+        </div>
 
     </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="Preview">
+</div>
+
 
     <!-- Scripts -->
     <script>
@@ -451,6 +497,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
