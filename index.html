@@ -76,40 +76,56 @@ document.addEventListener("DOMContentLoaded", function () {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const closeBtn = document.querySelector(".lightbox-close");
+    const zoomInBtn = document.getElementById("zoom-in");
+    const zoomOutBtn = document.getElementById("zoom-out");
+
+    let scale = 1;
 
     triggers.forEach(trigger => {
         trigger.addEventListener("click", function (e) {
             e.preventDefault();
             const imgSrc = this.getAttribute("href");
             lightboxImg.src = imgSrc;
+            scale = 1;
+            lightboxImg.style.transform = `scale(${scale})`;
             lightbox.classList.add("active");
         });
     });
 
-    // بستن با ضربدر
-    closeBtn.addEventListener("click", () => {
+    // Close
+    closeBtn.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+    });
+
+    function closeLightbox() {
         lightbox.classList.remove("active");
         lightboxImg.src = "";
+        scale = 1;
+    }
+
+    // Zoom In
+    zoomInBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        scale += 0.15;
+        lightboxImg.style.transform = `scale(${scale})`;
     });
 
-    // بستن با کلیک روی فضای تیره
-    lightbox.addEventListener("click", (e) => {
-        if (e.target === lightbox) {
-            lightbox.classList.remove("active");
-            lightboxImg.src = "";
-        }
-    });
-
-    // بستن با ESC
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-            lightbox.classList.remove("active");
-            lightboxImg.src = "";
-        }
+    // Zoom Out
+    zoomOutBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        scale = Math.max(0.5, scale - 0.15);
+        lightboxImg.style.transform = `scale(${scale})`;
     });
 
 });
 </script>
+
+		
 <!-- Conference -->
 <section id="one" class="wrapper style2">
     <div class="inner">
@@ -163,8 +179,15 @@ document.addEventListener("DOMContentLoaded", function () {
 <!-- Lightbox Modal -->
 <div id="lightbox" class="lightbox">
     <span class="lightbox-close">&times;</span>
+
+    <div class="lightbox-controls">
+        <button id="zoom-in">＋</button>
+        <button id="zoom-out">－</button>
+    </div>
+
     <img id="lightbox-img" src="" alt="Preview">
 </div>
+
 
 
     <!-- Scripts -->
@@ -497,71 +520,4 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
