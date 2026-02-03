@@ -4401,17 +4401,24 @@ input, select, textarea {
 /* ================================
    PROFESSIONAL SECTION TITLE (CONFERENCE)
    ================================ */
+.section-title-wrapper {
+    text-align: center;        /* وسط‌چین افقی */
+    margin-top: 0.3rem;        /* حداقل فاصله از بالا */
+    margin-bottom: 2.2rem;     /* فاصله منطقی از کارت‌ها */
+}
+
 .section-title-box {
     display: inline-block;
-    padding: 0.75em 2.4em;
-    background: transparent;       /* سفید برداشته شد */
-    color: #ffffff;                /* متن سفید */
-    border-radius: 0;              /* کپسول برداشته شد */
+    padding: 0.6em 2.2em;      /* کمی جمع‌وجورتر */
+    background: transparent;
+    color: #ffffff;
+    border-radius: 0;
     font-size: 1.6rem;
     font-weight: 900;
     letter-spacing: 0.6px;
     position: relative;
-    box-shadow: none;              /* سایه برداشته شد */
+    box-shadow: none;
+    margin: 0;                 /* مارجین صفر مطلق */
 }
 
 /* دو خط بالا و پایین */
@@ -4421,17 +4428,18 @@ input, select, textarea {
     position: absolute;
     left: 0;
     right: 0;
-    height: 3px;                   /* ضخیم‌تر از قبل */
-    background: #ffffff;            /* رنگ سفید */
+    height: 3px;
+    background: #ffffff;
 }
 
 .section-title-box::before {
-    top: 0;
+    top: -6px;   /* نزدیک‌تر به متن */
 }
 
 .section-title-box::after {
-    bottom: 0;
+    bottom: -6px; /* نزدیک‌تر به متن */
 }
+
 
 
 /* ================================
@@ -4440,13 +4448,13 @@ input, select, textarea {
 
 .greeting-title-wrapper {
     text-align: center;
-    margin-top: 3.5em;   /* فاصله از بالای سکشن */
+    margin-top: 5em;   /* فاصله از بالای سکشن */
     margin-bottom: 2.5em;
 }
 
 .greeting-title {
     display: inline-block;
-    font-size: 1.9rem;        /* بزرگ‌تر */
+    font-size: 5 rem;        /* بزرگ‌تر */
     font-weight: 900;
     letter-spacing: 1px;
     color: #ffffff;
@@ -4465,7 +4473,7 @@ input, select, textarea {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 3.5 rem;
+    font-size: 5 rem;
     opacity: 0.8;
 }
 
@@ -4489,4 +4497,5 @@ input, select, textarea {
         margin-bottom: 2em;
     }
 }
+
 
