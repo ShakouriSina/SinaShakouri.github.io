@@ -4535,10 +4535,9 @@ input, select, textarea {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;
-    z-index: 999999; /* بالاتر از سایدبار */
+    z-index: 999999;
 }
 
-/* Active */
 .lightbox.active {
     opacity: 1;
     pointer-events: auto;
@@ -4553,12 +4552,14 @@ input, select, textarea {
     transition: transform 0.25s ease;
 }
 
-/* Close button */
-.lightbox-close {
+/* Controls (X, +, -) */
+.lightbox-close,
+.lightbox-zoom-in,
+.lightbox-zoom-out {
     position: fixed;
-    top: 24px;
     right: 26px;
     font-size: 3.2rem;
+    font-weight: 400;
     color: #ffffff;
     cursor: pointer;
     user-select: none;
@@ -4566,39 +4567,15 @@ input, select, textarea {
     z-index: 1000000;
 }
 
-.lightbox-close:hover {
-    transform: scale(1.15) rotate(6deg);
+/* Positions */
+.lightbox-close { top: 24px; }
+.lightbox-zoom-in { top: 76px; }
+.lightbox-zoom-out { top: 128px; }
+
+.lightbox-close:hover,
+.lightbox-zoom-in:hover,
+.lightbox-zoom-out:hover {
+    transform: scale(1.15);
     color: #ff4d4d;
-}
-
-/* Zoom controls */
-.lightbox-controls {
-    position: fixed;
-    right: 28px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    z-index: 1000000;
-}
-
-.lightbox-controls button {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: none;
-    background: rgba(255,255,255,0.92);
-    color: #111;
-    font-size: 1.7rem;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-    transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.lightbox-controls button:hover {
-    transform: scale(1.12);
-    background: #ffffff;
 }
 
