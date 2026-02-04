@@ -4806,3 +4806,47 @@ input, select, textarea {
     margin-top: 0 !important;
 }
 
+
+
+
+
+/* ================================
+   REAL FIX: SECTION BACKGROUND STICKY TOP
+   Conference / Journal / Teaching / Honors
+   ================================ */
+
+/* حذف کامل padding پیش‌فرض سکشن‌ها */
+#one.wrapper,
+#two.wrapper,
+#teaching.wrapper,
+#honors.wrapper {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* حذف padding داخلی inner */
+#one .inner,
+#two .inner,
+#teaching .inner,
+#honors .inner {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+/* تیتر با فاصله‌ی کنترل‌شده از بالای بک‌گراند */
+#one .section-title-wrapper,
+#two .section-title-wrapper,
+#teaching .section-title-wrapper,
+#honors .section-title-wrapper {
+    margin-top: 1rem !important;   /* اگر خواستی: 0.6rem یا 1.2rem */
+    padding-top: 0 !important;
+}
+
+/* حذف فاصله پیش‌فرض h2 */
+#one h2,
+#two h2,
+#teaching h2,
+#honors h2 {
+    margin-top: 0 !important;
+}
+
