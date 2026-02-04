@@ -4520,7 +4520,7 @@ input, select, textarea {
 
 /* فاصله خیلی کم و کنترل‌شده از بالای سکشن */
 .section-title-wrapper {
-    margin-top: 0rem !important;   /* حداقل فاصله ممکن */
+    margin-top: 0.8rem !important;   /* حداقل فاصله ممکن */
 }
 
 
@@ -4682,6 +4682,7 @@ input, select, textarea {
     opacity: 1;
     transform: translateY(-2px);
 }
+
 
 
 
