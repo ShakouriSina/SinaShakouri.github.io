@@ -4735,21 +4735,9 @@ input, select, textarea {
 
 /* فقط Conference فاصله خیلی کم از بالای سکشن بگیره */
 #one .section-title-wrapper {
-    margin-top: 0.6rem !important;
+    margin-top: 0rem !important;
 }
 
-
-/* 1️⃣ تمام تیترهای سکشن روی بک‌گراند قرار بگیرند، جدا از padding داخلی */
-.section-title-wrapper {
-    position: absolute;      /* کاملاً جدا از flow */
-    top: 1.5rem;             /* فاصله از بالای سکشن */
-    left: 50%;               /* وسط‌چین افقی */
-    transform: translateX(-50%);
-    width: auto;             /* عرض باکس متناسب با متن */
-    z-index: 10;             /* بالای بک‌گراند */
-    margin: 0 !important;
-    padding: 0 !important;
-}
 
 /* باکس تیتر */
 .section-title-box {
@@ -4778,26 +4766,49 @@ input, select, textarea {
 .section-title-box::before { top: -6px !important; }
 .section-title-box::after { bottom: -6px !important; }
 
-/* 2️⃣ اطمینان از اینکه padding سکشن حذف شده */
-#one.wrapper,
-#two.wrapper,
-#teaching.wrapper,
-#honors.wrapper {
-    padding-top: 0 !important;
+
+
+
+/* ================================
+   FINAL STABLE SECTION TITLES
+   ================================ */
+
+.section-title-wrapper {
+    text-align: center;
+    margin: 3rem 0 4rem 0;
+    position: relative;
 }
 
-#one .inner,
-#two .inner,
-#teaching .inner,
-#honors .inner {
-    padding-top: 0 !important;
+.section-title-box {
+    display: inline-block;
+    padding: 0.7em 2.4em;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+    color: #ffffff;
+    background: rgba(255,255,255,0.12);
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+    position: relative;
 }
 
-/* 3️⃣ حداقل فاصله محتوا از تیتر */
-#one .conference-card,
-#two .journal-card,
-#teaching .teaching-card,
-#honors .honor-card {
-    margin-top: 8rem;  /* فاصله مناسب محتوا با تیتر */
+/* خطوط تزئینی */
+.section-title-box::before,
+.section-title-box::after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: #ffffff;
+}
+
+.section-title-box::before {
+    top: -8px;
+}
+
+.section-title-box::after {
+    bottom: -8px;
 }
 
