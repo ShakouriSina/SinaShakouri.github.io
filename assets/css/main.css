@@ -4405,30 +4405,30 @@ input, select, textarea {
 
 /* Wrapper */
 .section-title-wrapper {
-    position: relative;              /* داخل flow */
+    position: relative;
     text-align: center;
-    margin: 3.5rem 0 4rem 0;         /* فاصله استاندارد */
+    margin: 2rem 0 4rem 0;   /* بالا کمتر، پایین دست‌نخورده */
     padding: 0;
 }
 
-/* Title box */
 .section-title-box {
     display: inline-block;
-    padding: 0.65em 2.3em;
+    padding: 0.45em 1.6em;  /* باکس فیت و جمع */
     font-family: 'DM Serif Display', serif;
-    font-size: 2rem;
+    font-size: 1.75rem;     /* کمی کوچکتر، رسمی */
     font-weight: 900;
-    letter-spacing: 0.6px;
+    letter-spacing: 0.5px;
     color: #ffffff;
 
     background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(6px);
-    border-radius: 14px;
+    border-radius: 12px;
 
     box-shadow: 0 6px 20px rgba(0,0,0,0.18);
     position: relative;
     margin: 0;
 }
+
 
 /* Decorative lines */
 .section-title-box::before,
