@@ -351,26 +351,26 @@ document.addEventListener("DOMContentLoaded", function () {
          ============================== -->
     <div class="conference-card">
 
-      <!-- Title (Centered) -->
-      <div style="text-align:center; padding:1.6rem 1.6rem 1rem;">
+      <!-- CENTERED TITLE -->
+      <div style="text-align:center; padding:1.6rem 1.6rem 1.6rem;">
         <h3 style="margin:0; font-weight:800; font-size:1.15rem;">
           Teaching Assistant
         </h3>
-        <div style="margin-top:0.35rem; font-weight:500; opacity:0.85;">
+        <div style="margin-top:0.4rem; font-weight:500; opacity:0.85;">
           Department of Petroleum Engineering, Shiraz University
         </div>
       </div>
 
-      <!-- Content Row -->
+      <!-- CONTENT ROW -->
       <div style="
         display:flex;
+        align-items:center;   /* 🔴 این خط کلیدیه */
         gap:2rem;
-        align-items:flex-start;
-        padding:1.2rem 1.6rem 1.8rem;
+        padding:0 1.6rem 1.8rem;
       ">
 
-        <!-- LEFT: Details -->
-        <div style="flex:1;">
+        <!-- LEFT: TEXT (LEFT-ALIGNED) -->
+        <div style="flex:1; text-align:left;">
 
           <div style="margin-bottom:1rem;">
             <strong>Formation Damage | Master’s</strong><br>
@@ -395,8 +395,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         </div>
 
-        <!-- RIGHT: Image -->
-        <div style="flex:0 0 220px;">
+        <!-- RIGHT: IMAGE (VERTICALLY CENTERED) -->
+        <div style="flex:0 0 220px; text-align:right;">
           <a href="images/Teaching_Certificate.jpg" class="lightbox-trigger">
             <img
               src="images/Teaching_Certificate.jpg"
@@ -413,14 +413,14 @@ document.addEventListener("DOMContentLoaded", function () {
          ============================== -->
     <div class="conference-card" style="margin-top:2.8rem;">
 
-      <div class="conference-info" style="width:100%;">
+      <h3 style="text-align:center; margin:1.6rem 0;">
+        Workshop Instructor<br>
+        <span style="font-weight:500; opacity:0.85;">
+          Department of Petroleum Engineering, Shiraz University
+        </span>
+      </h3>
 
-        <h3 style="text-align:center; margin-bottom:1.4rem;">
-          Workshop Instructor<br>
-          <span style="font-weight:500; opacity:0.85;">
-            Department of Petroleum Engineering, Shiraz University
-          </span>
-        </h3>
+      <div class="conference-info">
 
         <ul class="journal-bullets">
           <li style="margin-bottom:0.8rem;">
@@ -439,6 +439,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   </div>
 </section>
+
 
 
 <section id="honors" class="wrapper style3 fade-up">
@@ -578,6 +579,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
