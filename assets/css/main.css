@@ -4661,14 +4661,13 @@ input, select, textarea {
 /* Social Icons Bottom of Sidebar */
 .sidebar-socials {
     position: absolute;
-    bottom: 18px;
+    bottom: 10px;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 14px;
     padding-top: 10px;
-    border-top: 1px solid rgba(255,255,255,0.15);
 }
 
 .sidebar-socials a img {
@@ -4683,5 +4682,6 @@ input, select, textarea {
     opacity: 1;
     transform: translateY(-2px);
 }
+
 
 
