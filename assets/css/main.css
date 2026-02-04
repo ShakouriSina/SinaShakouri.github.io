@@ -4398,408 +4398,45 @@ input, select, textarea {
 }
 
 
-/* ================================
-   PROFESSIONAL SECTION TITLE (CONFERENCE)
-   ================================ */
+/* ==================================================
+   UNIFIED & STABLE SECTION TITLES – FINAL VERSION
+   Used by: #one, #two, #teaching, #honors
+   ================================================== */
+
+/* Wrapper */
 .section-title-wrapper {
-    text-align: center;        /* وسط‌چین افقی */
-    margin-top: 1rem;        /* حداقل فاصله از بالا */
-    margin-bottom: 4rem;     /* فاصله منطقی از کارت‌ها */
+    position: relative;              /* داخل flow */
+    text-align: center;
+    margin: 3.5rem 0 4rem 0;         /* فاصله استاندارد */
+    padding: 0;
 }
 
+/* Title box */
 .section-title-box {
     display: inline-block;
-    padding: 0.6em 2.2em;      /* کمی جمع‌وجورتر */
-    background: transparent;
-    color: #ffffff;
-    border-radius: 0;
+    padding: 0.65em 2.3em;
+    font-family: 'DM Serif Display', serif;
     font-size: 2rem;
     font-weight: 900;
     letter-spacing: 0.6px;
-    position: relative;
-    box-shadow: none;
-    margin: 0;                 /* مارجین صفر مطلق */
-}
-
-/* دو خط بالا و پایین */
-.section-title-box::before,
-.section-title-box::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: #ffffff;
-}
-
-.section-title-box::before {
-    top: -6px;   /* نزدیک‌تر به متن */
-}
-
-.section-title-box::after {
-    bottom: -6px; /* نزدیک‌تر به متن */
-}
-
-
-
-/* ================================
-   GREETING SECTION TITLE (WELCOME STYLE)
-   ================================ */
-
-.greeting-title-wrapper {
-    text-align: center;
-    margin-top: 5em;   /* فاصله از بالای سکشن */
-    margin-bottom: 2.5em;
-}
-
-.greeting-title {
-    display: inline-block;
-    font-size: 5 rem;        /* بزرگ‌تر */
-    font-weight: 900;
-    letter-spacing: 1px;
     color: #ffffff;
-    padding: 0.6em 2.2em;
-    border-radius: 14px;
-    background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+
+    background: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(6px);
-    border: 1px solid rgba(255,255,255,0.25);
-    position: relative;
-}
-
-/* تزئین رسمی بالا و پایین */
-.greeting-title::before,
-.greeting-title::after {
-    content: "✦";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 5 rem;
-    opacity: 0.8;
-}
-
-.greeting-title::before {
-    left: -22px;
-}
-
-.greeting-title::after {
-    right: -22px;
-}
-
-/* موبایل */
-@media (max-width: 768px) {
-    .greeting-title {
-        font-size: 1.5rem;
-        padding: 0.5em 1.6em;
-    }
-
-    .greeting-title-wrapper {
-        margin-top: 2.5em;
-        margin-bottom: 2em;
-    }
-}
-
-
-/* حذف فاصله اضافی بالای سکشن Conference */
-#one {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-}
-
-/* حذف فاصله پیش‌فرض inner */
-#one .inner {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-}
-
-/* حذف فاصله بالای تیتر */
-#one h2,
-.section-title-wrapper {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-/* فاصله خیلی کم و کنترل‌شده از بالای سکشن */
-.section-title-wrapper {
-    margin-top: 0rem !important;   /* حداقل فاصله ممکن */
-}
-
-
-/* Lightbox Overlay */
-.lightbox {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.35s ease;
-    z-index: 999999; /* بالاتر از سایدبار */
-}
-
-.lightbox.active {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* Image */
-.lightbox img {
-    max-width: 88%;
-    max-height: 88vh;
     border-radius: 14px;
-    box-shadow: 0 25px 70px rgba(0,0,0,0.7);
-}
 
-/* Close Button */
-.lightbox-close {
-    position: fixed;
-    top: 24px;
-    right: 26px;
-    font-size: 3.2rem;
-    font-weight: 400;
-    color: #ffffff;
-    cursor: pointer;
-    user-select: none;
-    transition: transform 0.2s ease, color 0.2s ease;
-    z-index: 1000000;
-}
-
-.lightbox-close:hover {
-    transform: scale(1.15);
-    color: #ff4d4d;
-}
-
-
-
-/* Journal Grid */
-.journal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 28px;
-    margin-top: 40px;
-}
-
-/* Card */
-.journal-card {
-    background: #ffffff;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.journal-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 45px rgba(0,0,0,0.18);
-}
-
-/* Image */
-.journal-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Content */
-.journal-info {
-    padding: 18px 20px 20px;
-    font-family: 'DM Serif Display', serif;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-/* Title */
-.journal-title {
-    font-size: 1.05rem;
-    line-height: 1.45;
-    margin-bottom: 10px;
-    color: #000;
-    font-style: italic;
-}
-
-/* Publisher */
-.publisher-main {
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-    display: block;
-    color: #000;
-}
-
-/* Bullets */
-.journal-bullets {
-    padding-left: 18px;
-    margin: 6px 0 14px;
-    color: #000;
-    font-size: 0.9rem;
-}
-
-.journal-bullets li {
-    margin-bottom: 4px;
-}
-
-/* Link */
-.publisher-link {
-    margin-top: auto;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: #1f4fd8;
-    font-weight: 500;
-    transition: opacity 0.2s ease;
-}
-
-.publisher-link:hover {
-    opacity: 0.7;
-}
-
-
-/* Social Icons Bottom of Sidebar */
-.sidebar-socials {
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    padding-top: 10px;
-}
-
-.sidebar-socials a img {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
-    opacity: 0.85;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.sidebar-socials a:hover img {
-    opacity: 1;
-    transform: translateY(-2px);
-}
-
-
-
-
-
-
-/* ================================
-   FINAL OVERRIDE – ALL SECTION TITLES UNIFIED
-   ================================ */
-
-.section-title-wrapper {
-    text-align: center !important;
-    margin-top: 0 !important;
-    margin-bottom: 4rem !important;
-    padding-top: 0 !important;
-}
-
-.section-title-box {
-    display: inline-block !important;
-    padding: 0.6em 2.2em !important;
-    background: transparent !important;
-    color: #ffffff !important;
-    border-radius: 0 !important;
-    font-size: 2rem !important;
-    font-weight: 900 !important;
-    letter-spacing: 0.6px !important;
-    position: relative !important;
-    box-shadow: none !important;
-    margin: 0 !important;
-    font-family: 'DM Serif Display', serif !important;
-}
-
-/* خطوط بالا و پایین */
-.section-title-box::before,
-.section-title-box::after {
-    content: "" !important;
-    position: absolute !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 3px !important;
-    background: #ffffff !important;
-}
-
-.section-title-box::before {
-    top: -6px !important;
-}
-
-.section-title-box::after {
-    bottom: -6px !important;
-}
-
-/* فقط Conference فاصله خیلی کم از بالای سکشن بگیره */
-#one .section-title-wrapper {
-    margin-top: 0rem !important;
-}
-
-
-/* باکس تیتر */
-.section-title-box {
-    display: inline-block !important;
-    background: rgba(255,255,255,0.15) !important; /* کمی شفاف */
-    color: #fff !important;
-    padding: 0.6em 2em !important;
-    border-radius: 14px !important;
-    font-size: 2rem !important;
-    font-weight: 900 !important;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
-    position: relative !important;
-}
-
-/* خطوط تزئینی بالا و پایین */
-.section-title-box::before,
-.section-title-box::after {
-    content: "" !important;
-    position: absolute !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 3px !important;
-    background: #ffffff !important;
-}
-
-.section-title-box::before { top: -6px !important; }
-.section-title-box::after { bottom: -6px !important; }
-
-
-
-
-/* ================================
-   FINAL STABLE SECTION TITLES
-   ================================ */
-
-.section-title-wrapper {
-    text-align: center;
-    margin: 3rem 0 4rem 0;
-    position: relative;
-}
-
-.section-title-box {
-    display: inline-block;
-    padding: 0.7em 2.4em;
-    font-family: 'DM Serif Display', serif;
-    font-size: 2rem;
-    font-weight: 900;
-    letter-spacing: 0.6px;
-    color: #ffffff;
-    background: rgba(255,255,255,0.12);
-    border-radius: 14px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.18);
     position: relative;
+    margin: 0;
 }
 
-/* خطوط تزئینی */
+/* Decorative lines */
 .section-title-box::before,
 .section-title-box::after {
     content: "";
     position: absolute;
-    left: 10%;
-    right: 10%;
+    left: 12%;
+    right: 12%;
     height: 3px;
     background: #ffffff;
 }
@@ -4810,5 +4447,34 @@ input, select, textarea {
 
 .section-title-box::after {
     bottom: -8px;
+}
+
+/* --------------------------------------------------
+   Section spacing safety (ROOT FIX)
+   -------------------------------------------------- */
+
+/* restore healthy inner spacing */
+.wrapper > .inner {
+    padding-top: 5rem;
+}
+
+/* Conference: slightly tighter top spacing */
+#one > .inner {
+    padding-top: 3.5rem;
+}
+
+/* --------------------------------------------------
+   Mobile adjustments
+   -------------------------------------------------- */
+@media (max-width: 768px) {
+
+    .section-title-wrapper {
+        margin: 2.5rem 0 3rem 0;
+    }
+
+    .section-title-box {
+        font-size: 1.5rem;
+        padding: 0.55em 1.8em;
+    }
 }
 
