@@ -4478,3 +4478,14 @@ input, select, textarea {
     }
 }
 
+
+
+
+
+
+
+
+/* ================================ GREETING SECTION TITLE (WELCOME STYLE) ================================ */ .greeting-title-wrapper { text-align: center; margin-top: 5em; /* فاصله از بالای سکشن */ margin-bottom: 2.5em; } .greeting-title { display: inline-block; font-size: 5 rem; /* بزرگ‌تر */ font-weight: 900; letter-spacing: 1px; color: #ffffff; padding: 0.6em 2.2em; border-radius: 14px; background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02)); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.25); position: relative; } /* تزئین رسمی بالا و پایین */ .greeting-title::before, .greeting-title::after { content: "✦"; position: absolute; top: 50%; transform: translateY(-50%); font-size: 5 rem; opacity: 0.8; } .greeting-title::before { left: -22px; } .greeting-title::after { right: -22px; } /* موبایل */ @media (max-width: 768px) { .greeting-title { font-size: 1.5rem; padding: 0.5em 1.6em; } .greeting-title-wrapper { margin-top: 2.5em; margin-bottom: 2em; } }
+
+
+/* Social Icons Bottom of Sidebar */ .sidebar-socials { position: absolute; bottom: 10px; left: 0; width: 100%; display: flex; justify-content: center; gap: 14px; padding-top: 10px; } .sidebar-socials a img { width: 22px; height: 22px; object-fit: contain; opacity: 0.85; transition: transform 0.2s ease, opacity 0.2s ease; } .sidebar-socials a:hover img { opacity: 1; transform: translateY(-2px); }
