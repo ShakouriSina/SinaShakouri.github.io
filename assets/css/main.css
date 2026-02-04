@@ -4739,75 +4739,6 @@ input, select, textarea {
 }
 
 
-
-
-/* === FIX CONFERENCE SECTION TOP GAP (REAL FIX) === */
-
-/* حذف padding پیش‌فرض قالب از سکشن Conference */
-#one.wrapper {
-    padding-top: 0 !important;
-}
-
-/* حذف padding داخلی inner */
-#one .inner {
-    padding-top: 0 !important;
-}
-
-/* عنوان بچسبه به بالا */
-#one .section-title-wrapper {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-/* حذف فاصله بالای h2 */
-#one h2 {
-    margin-top: 0 !important;
-}
-
-
-
-
-
-/* =========================================
-   FINAL UNIFIED SECTION TITLE TOP SPACING
-   Conference / Journal / Teaching / Honors
-   ========================================= */
-
-/* حذف padding پیش‌فرض قالب از بالا */
-#one.wrapper,
-#two.wrapper,
-#teaching.wrapper,
-#honors.wrapper {
-    padding-top: 0 !important;
-}
-
-/* حذف padding داخلی inner */
-#one .inner,
-#two .inner,
-#teaching .inner,
-#honors .inner {
-    padding-top: 0 !important;
-}
-
-/* فاصله‌ی یکسان و کم برای تیتر هر 4 سکشن */
-#one .section-title-wrapper,
-#two .section-title-wrapper,
-#teaching .section-title-wrapper,
-#honors .section-title-wrapper {
-    margin-top: 1.2rem !important;   /* فاصله کم و حرفه‌ای از بالای سکشن */
-    padding-top: 0 !important;
-}
-
-/* حذف فاصله پیش‌فرض h2 در همه سکشن‌ها */
-#one h2,
-#two h2,
-#teaching h2,
-#honors h2 {
-    margin-top: 0 !important;
-}
-
-
-
 /* 1️⃣ تمام تیترهای سکشن روی بک‌گراند قرار بگیرند، جدا از padding داخلی */
 .section-title-wrapper {
     position: absolute;      /* کاملاً جدا از flow */
@@ -4869,3 +4800,4 @@ input, select, textarea {
 #honors .honor-card {
     margin-top: 8rem;  /* فاصله مناسب محتوا با تیتر */
 }
+
