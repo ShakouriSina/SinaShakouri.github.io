@@ -4875,21 +4875,46 @@ section::after {
     content: none !important;
 }
 
-/* ======================================
-   FORCE EACH SECTION BACKGROUND TO FILL FROM TOP
-   ====================================== */
-
-#one,
-#two,
-#teaching,
-#honors {
-    position: relative !important;
-    background-clip: padding-box !important;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
+/* 1️⃣ تمام تیترهای سکشن روی بک‌گراند قرار بگیرند، جدا از padding داخلی */
+.section-title-wrapper {
+    position: absolute;      /* کاملاً جدا از flow */
+    top: 1.5rem;             /* فاصله از بالای سکشن */
+    left: 50%;               /* وسط‌چین افقی */
+    transform: translateX(-50%);
+    width: auto;             /* عرض باکس متناسب با متن */
+    z-index: 10;             /* بالای بک‌گراند */
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-/* حذف کامل فاصله‌های پیش‌فرض قالب از بالا */
+/* باکس تیتر */
+.section-title-box {
+    display: inline-block !important;
+    background: rgba(255,255,255,0.15) !important; /* کمی شفاف */
+    color: #fff !important;
+    padding: 0.6em 2em !important;
+    border-radius: 14px !important;
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12) !important;
+    position: relative !important;
+}
+
+/* خطوط تزئینی بالا و پایین */
+.section-title-box::before,
+.section-title-box::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: #ffffff !important;
+}
+
+.section-title-box::before { top: -6px !important; }
+.section-title-box::after { bottom: -6px !important; }
+
+/* 2️⃣ اطمینان از اینکه padding سکشن حذف شده */
 #one.wrapper,
 #two.wrapper,
 #teaching.wrapper,
@@ -4904,12 +4929,12 @@ section::after {
     padding-top: 0 !important;
 }
 
-/* تیترها با فاصله‌ی خیلی کم از بالای بک‌گراند */
-#one .section-title-wrapper,
-#two .section-title-wrapper,
-#teaching .section-title-wrapper,
-#honors .section-title-wrapper {
-    margin-top: 0.8rem !important;
-    padding-top: 0 !important;
+/* 3️⃣ حداقل فاصله محتوا از تیتر */
+#one .conference-card,
+#two .journal-card,
+#teaching .teaching-card,
+#honors .honor-card {
+    margin-top: 8rem;  /* فاصله مناسب محتوا با تیتر */
 }
+
 
