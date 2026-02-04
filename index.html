@@ -467,20 +467,36 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- ==============================
          Honor 2 (With Image)
          ============================== -->
-    <div class="conference-card" style="flex-direction: column; text-align:center; padding:1.6rem; margin-top:2.8rem;">
-      <div style="font-weight:800; font-size:1.2rem; margin-bottom:1rem;">
-        Distinguished Research Achievement — Selected during Research Week
+    <div class="conference-card" style="flex-direction: column; margin-top:2.8rem;">
+
+      <!-- CENTERED TITLE -->
+      <div style="
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.6rem 1.6rem 1rem;
+      ">
+        <div style="font-weight:800; font-size:1.2rem; margin-bottom:1rem;">
+          Distinguished Research Achievement — Selected during Research Week
+        </div>
+
+        <!-- IMAGE CENTERED -->
+        <a href="images/Research_Week_Certificate.jpg" class="lightbox-trigger" style="display:inline-block;">
+          <img
+            src="images/Research_Week_Certificate.jpg"
+            class="certificate-img"
+            alt="Research Week Certificate">
+        </a>
+
       </div>
 
-      <div style="display:flex; justify-content:center;">
-        <img src="images/Research_Week_Certificate.jpg"
-             class="certificate-img"
-             alt="Research Week Certificate">
-      </div>
     </div>
 
   </div>
 </section>
+
 
 
 				<!-- Three -->
@@ -578,6 +594,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
