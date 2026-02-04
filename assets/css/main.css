@@ -4687,3 +4687,53 @@ input, select, textarea {
 
 
 
+
+/* ================================
+   FINAL OVERRIDE – ALL SECTION TITLES UNIFIED
+   ================================ */
+
+.section-title-wrapper {
+    text-align: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 4rem !important;
+    padding-top: 0 !important;
+}
+
+.section-title-box {
+    display: inline-block !important;
+    padding: 0.6em 2.2em !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    border-radius: 0 !important;
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.6px !important;
+    position: relative !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    font-family: 'DM Serif Display', serif !important;
+}
+
+/* خطوط بالا و پایین */
+.section-title-box::before,
+.section-title-box::after {
+    content: "" !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 3px !important;
+    background: #ffffff !important;
+}
+
+.section-title-box::before {
+    top: -6px !important;
+}
+
+.section-title-box::after {
+    bottom: -6px !important;
+}
+
+/* فقط Conference فاصله خیلی کم از بالای سکشن بگیره */
+#one .section-title-wrapper {
+    margin-top: 0.6rem !important;
+}
