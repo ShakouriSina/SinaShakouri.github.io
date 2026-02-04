@@ -456,50 +456,108 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 </section>
 
-
-
-
 <section id="honors" class="wrapper style3 fade-up">
   <div class="inner">
-		<div class="section-title-wrapper">
-		    <h2 class="section-title-box">Honors & Awards</h2>
-		</div>
 
+    <div class="section-title-wrapper">
+      <h2 class="section-title-box">Honors & Awards</h2>
+    </div>
 
-    <ul class="honors-list">
+    <!-- ==============================
+         Honor 1 (No Image)
+         ============================== -->
+    <div class="conference-card" style="flex-direction: column;">
 
-      <li>
-        <span class="honor-title">
+      <!-- CENTERED TITLE -->
+      <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.6rem 1.6rem 1.6rem;
+      ">
+        <h3 style="margin:0; font-weight:800; font-size:1.2rem;">
           Iran National Elites Foundation Member
-        </span>
-        <span class="honor-desc">
+        </h3>
+        <div style="margin-top:0.35rem; font-weight:500; opacity:0.85;">
           — Awarded a research grant in collaboration with SZOGPC
-        </span>
-        <span class="honor-year">2024</span>
-      </li>
+        </div>
+      </div>
 
-      <li>
-        <span class="honor-title">
+      <!-- YEAR -->
+      <div style="text-align:center; margin-top:0.6rem; font-weight:600; opacity:0.85;">
+        2024
+      </div>
+
+    </div>
+
+    <!-- ==============================
+         Honor 2 (With Certificate Image)
+         ============================== -->
+    <div class="conference-card" style="flex-direction: column; margin-top:2.8rem;">
+
+      <!-- CENTERED TITLE -->
+      <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.6rem 1.6rem 1.6rem;
+      ">
+        <h3 style="margin:0; font-weight:800; font-size:1.2rem;">
           Distinguished Research Achievement (Thesis)
-        </span>
-        <span class="honor-desc">
+        </h3>
+        <div style="margin-top:0.35rem; font-weight:500; opacity:0.85;">
           — Selected during Research Week
-        </span>
+        </div>
+      </div>
 
-        <a href="images/Research_Week_Certificate.pdf"
-           target="_blank"
-           class="honor-certificate">
-           View Certificate
-        </a>
+      <!-- CONTENT ROW -->
+      <div style="
+        display:flex;
+        align-items:center;
+        gap:2rem;
+        padding:1rem 1.6rem 1.8rem;
+        width: 100%;
+      ">
 
-        <span class="honor-year">2023</span>
-      </li>
+        <!-- LEFT: Text -->
+        <div style="flex:1; text-align:left;">
+          <!-- Certificate link -->
+          <a href="images/Research_Week_Certificate.pdf" target="_blank" style="
+            display:inline-block;
+            margin-top:0.5rem;
+            font-weight:500;
+            opacity:0.85;
+            text-decoration: underline;
+            color:#000;
+          ">
+            View Certificate
+          </a>
+        </div>
 
-    </ul>
+        <!-- RIGHT: Certificate Image -->
+        <div style="flex:0 0 220px; text-align:right;">
+          <a href="images/Research_Week_Certificate.pdf" target="_blank">
+            <img src="images/Research_Week_Certificate.jpg"
+                 class="certificate-img"
+                 alt="Research Week Certificate">
+          </a>
+        </div>
+
+      </div>
+
+      <!-- YEAR -->
+      <div style="text-align:center; margin-top:0.6rem; font-weight:600; opacity:0.85;">
+        2023
+      </div>
+
+    </div>
+
   </div>
 </section>
-
-
 
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up">
@@ -596,6 +654,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
