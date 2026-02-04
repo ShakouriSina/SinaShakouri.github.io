@@ -352,19 +352,21 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="conference-card">
 
       <!-- Card Title -->
-      <div style="text-align:center; padding:1.4rem 1.6rem 0.8rem;">
-        <h3 style="
-          margin:0;
-          font-weight:800;
-          font-size:1.15rem;
-          letter-spacing:0.3px;
-        ">
-          Teaching Assistant<br>
-          <span style="font-weight:500; opacity:0.85;">
-            Department of Petroleum Engineering, Shiraz University
-          </span>
-        </h3>
-      </div>
+<div style="text-align:center; padding:1.6rem 1.6rem 0;">
+  <h3 style="
+    margin:0;
+    font-weight:800;
+    font-size:1.15rem;
+    letter-spacing:0.3px;
+  ">
+    Teaching Assistant
+  </h3>
+
+  <div style="margin-top:0.35rem; font-weight:500; opacity:0.85;">
+    Department of Petroleum Engineering, Shiraz University
+  </div>
+</div>
+
 
       <!-- Certificate Image -->
       <a href="images/Teaching_Certificate.jpg" class="lightbox-trigger">
@@ -373,36 +375,51 @@ document.addEventListener("DOMContentLoaded", function () {
              alt="Teaching Certificate">
       </a>
 
-      <!-- Teaching Details -->
-      <div class="conference-info">
+<!-- Content Row -->
+<div style="
+  display:flex;
+  align-items:flex-start;
+  gap:2rem;
+  padding:1.4rem 1.6rem 1.8rem;
+">
 
-        <ul class="journal-bullets" style="margin-top:0.8rem;">
+  <!-- LEFT: Teaching Details -->
+  <div style="flex:1;">
 
-          <li style="margin-bottom:1rem;">
-            <strong>Formation Damage | Master’s</strong><br>
-            <span style="opacity:0.85;">
-              Projects &amp; Exercises Lead — Second semester 2021–2022
-            </span>
-          </li>
-
-          <li style="margin-bottom:1rem;">
-            <strong>Production | Bachelor’s</strong><br>
-            <span style="opacity:0.85;">
-              STIMPRO Instructor; Projects &amp; Exercises Lead — First semester 2022–2023
-            </span>
-          </li>
-
-          <li>
-            <strong>Advanced Production | Master’s</strong><br>
-            <span style="opacity:0.85;">
-              PIPESIM Instructor; Projects &amp; Exercises Lead — First semester 2022–2023
-            </span>
-          </li>
-
-        </ul>
-
-      </div>
+    <div style="margin-bottom:1rem;">
+      <strong>Formation Damage | Master’s</strong><br>
+      <span style="opacity:0.85;">
+        Projects &amp; Exercises Lead — Second semester 2021–2022
+      </span>
     </div>
+
+    <div style="margin-bottom:1rem;">
+      <strong>Production | Bachelor’s</strong><br>
+      <span style="opacity:0.85;">
+        STIMPRO Instructor; Projects &amp; Exercises Lead — First semester 2022–2023
+      </span>
+    </div>
+
+    <div>
+      <strong>Advanced Production | Master’s</strong><br>
+      <span style="opacity:0.85;">
+        PIPESIM Instructor; Projects &amp; Exercises Lead — First semester 2022–2023
+      </span>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: Certificate Image -->
+  <div style="flex:0 0 220px; text-align:right;">
+    <a href="images/Teaching_Certificate.jpg" class="lightbox-trigger">
+      <img src="images/Teaching_Certificate.jpg"
+           class="certificate-img"
+           alt="Teaching Certificate">
+    </a>
+  </div>
+
+</div>
+
 
     <!-- ==============================
          Workshop Instructor (NO IMAGE)
@@ -411,12 +428,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
       <div class="conference-info" style="width:100%;">
 
-        <h3 style="margin-bottom:0.8rem;">
-          Workshop Instructor<br>
-          <span style="font-weight:500; opacity:0.85;">
-            Department of Petroleum Engineering, Shiraz University
-          </span>
-        </h3>
+<h3 style="text-align:center; margin-bottom:1.2rem;">
+  Workshop Instructor<br>
+  <span style="font-weight:500; opacity:0.85;">
+    Department of Petroleum Engineering, Shiraz University
+  </span>
+</h3>
+
 
         <ul class="journal-bullets">
           <li style="margin-bottom:0.8rem;">
@@ -576,6 +594,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
