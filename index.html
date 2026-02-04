@@ -347,16 +347,23 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 
     <!-- ==============================
-         Teaching Assistant
+         Teaching Assistant (WITH IMAGE)
          ============================== -->
-    <div class="conference-card">
+    <div class="conference-card" style="flex-direction: column;">
 
       <!-- CENTERED TITLE -->
-      <div style="text-align:center; padding:1.6rem 1.6rem 1.6rem;">
-        <h3 style="margin:0; font-weight:800; font-size:1.15rem;">
+      <div style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.6rem 1.6rem 1.6rem;
+      ">
+        <h3 style="margin:0; font-weight:800; font-size:1.2rem;">
           Teaching Assistant
         </h3>
-        <div style="margin-top:0.4rem; font-weight:500; opacity:0.85;">
+        <div style="margin-top:0.35rem; font-weight:500; opacity:0.85;">
           Department of Petroleum Engineering, Shiraz University
         </div>
       </div>
@@ -364,12 +371,13 @@ document.addEventListener("DOMContentLoaded", function () {
       <!-- CONTENT ROW -->
       <div style="
         display:flex;
-        align-items:center;   /* 🔴 این خط کلیدیه */
+        align-items:center;       /* عموداً وسط */
         gap:2rem;
-        padding:0 1.6rem 1.8rem;
+        padding:1rem 1.6rem 1.8rem;
+        width: 100%;
       ">
 
-        <!-- LEFT: TEXT (LEFT-ALIGNED) -->
+        <!-- LEFT: TEXT -->
         <div style="flex:1; text-align:left;">
 
           <div style="margin-bottom:1rem;">
@@ -380,14 +388,14 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
 
           <div style="margin-bottom:1rem;">
-            <strong>Production Engineering | Bachelor’s</strong><br>
+            <strong>Production | Bachelor’s</strong><br>
             <span style="opacity:0.85;">
-              STIMPRO Instructor; Projects &amp; Exercises Lead — First semester 2022–2023          
+              STIMPRO Instructor; Projects &amp; Exercises Lead — First semester 2022–2023
             </span>
           </div>
 
           <div>
-            <strong>Advanced Production Engineering | Master’s</strong><br>
+            <strong>Advanced Production | Master’s</strong><br>
             <span style="opacity:0.85;">
               PIPESIM Instructor; Projects &amp; Exercises Lead — First semester 2022–2023
             </span>
@@ -395,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         </div>
 
-        <!-- RIGHT: IMAGE (VERTICALLY CENTERED) -->
+        <!-- RIGHT: IMAGE -->
         <div style="flex:0 0 220px; text-align:right;">
           <a href="images/Teaching_Certificate.jpg" class="lightbox-trigger">
             <img
@@ -411,17 +419,25 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- ==============================
          Workshop Instructor
          ============================== -->
-    <div class="conference-card" style="margin-top:2.8rem;">
+    <div class="conference-card" style="margin-top:2.8rem; flex-direction: column;">
 
-      <h3 style="text-align:center; margin:1.6rem 0;">
-        Workshop Instructor<br>
-        <span style="font-weight:500; opacity:0.85;">
+      <div style="
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.6rem 1.6rem 1.6rem;
+      ">
+        <h3 style="margin:0; font-weight:800; font-size:1.2rem;">
+          Workshop Instructor
+        </h3>
+        <div style="margin-top:0.35rem; font-weight:500; opacity:0.85;">
           Department of Petroleum Engineering, Shiraz University
-        </span>
-      </h3>
+        </div>
+      </div>
 
-      <div class="conference-info">
-
+      <div class="conference-info" style="padding:0 1.6rem 1.6rem; width:100%;">
         <ul class="journal-bullets">
           <li style="margin-bottom:0.8rem;">
             <strong>Management of Scientific References and Referencing Software</strong><br>
@@ -433,12 +449,13 @@ document.addEventListener("DOMContentLoaded", function () {
             <span style="opacity:0.85;">Winter 2024</span>
           </li>
         </ul>
-
       </div>
+
     </div>
 
   </div>
 </section>
+
 
 
 
@@ -579,6 +596,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
