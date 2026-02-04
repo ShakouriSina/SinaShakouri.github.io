@@ -4501,3 +4501,96 @@ input, select, textarea {
 
 
 
+.teaching-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* Centered Titles */
+.section-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  margin-top: 8px;
+}
+
+/* Card Layout */
+.teaching-card {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.card-image img {
+  width: 220px;
+  border-radius: 14px;
+}
+
+/* Content */
+.card-content {
+  flex: 1;
+}
+
+.course h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.course p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* Elegant divider instead of bullets */
+.divider {
+  height: 1px;
+  width: 70px;
+  background: #ccc;
+  margin: 22px 0;
+}
+
+/* Workshops */
+.workshop-list {
+  max-width: 700px;
+  margin: auto;
+}
+
+.workshop-item {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 22px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.workshop-item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+
+.workshop-item span {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
