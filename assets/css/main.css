@@ -4407,7 +4407,7 @@ input, select, textarea {
 .section-title-wrapper {
     position: relative;
     text-align: center;
-    margin: 2rem 0 4rem 0;   /* بالا کمتر، پایین دست‌نخورده */
+    margin: 0rem 0 4rem 0;   /* بالا کمتر، پایین دست‌نخورده */
     padding: 0;
 }
 
@@ -4492,4 +4492,5 @@ input, select, textarea {
 
 
 /* Lightbox Overlay */ .lightbox { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.9); display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.35s ease; z-index: 999999; /* بالاتر از سایدبار */ } .lightbox.active { opacity: 1; pointer-events: auto; } /* Image */ .lightbox img { max-width: 88%; max-height: 88vh; border-radius: 14px; box-shadow: 0 25px 70px rgba(0,0,0,0.7); } /* Close Button */ .lightbox-close { position: fixed; top: 24px; right: 26px; font-size: 3.2rem; font-weight: 400; color: #ffffff; cursor: pointer; user-select: none; transition: transform 0.2s ease, color 0.2s ease; z-index: 1000000; } .lightbox-close:hover { transform: scale(1.15); color: #ff4d4d; }
+
 
