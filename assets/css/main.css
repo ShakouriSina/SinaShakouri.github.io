@@ -4850,3 +4850,66 @@ input, select, textarea {
     margin-top: 0 !important;
 }
 
+
+
+
+/* ======================================
+   KILL TEMPLATE BACKGROUND (PURPLE) FOR REAL
+   ====================================== */
+
+/* بک‌گراند پیش‌فرض قالب رو کلاً نابود کن */
+#wrapper,
+#wrapper::before,
+#wrapper::after,
+.wrapper,
+.wrapper::before,
+.wrapper::after {
+    background: none !important;
+    background-image: none !important;
+}
+
+/* هیچ overlay قدیمی باقی نمونه */
+section::before,
+section::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* ======================================
+   FORCE EACH SECTION BACKGROUND TO FILL FROM TOP
+   ====================================== */
+
+#one,
+#two,
+#teaching,
+#honors {
+    position: relative !important;
+    background-clip: padding-box !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* حذف کامل فاصله‌های پیش‌فرض قالب از بالا */
+#one.wrapper,
+#two.wrapper,
+#teaching.wrapper,
+#honors.wrapper {
+    padding-top: 0 !important;
+}
+
+#one .inner,
+#two .inner,
+#teaching .inner,
+#honors .inner {
+    padding-top: 0 !important;
+}
+
+/* تیترها با فاصله‌ی خیلی کم از بالای بک‌گراند */
+#one .section-title-wrapper,
+#two .section-title-wrapper,
+#teaching .section-title-wrapper,
+#honors .section-title-wrapper {
+    margin-top: 0.8rem !important;
+    padding-top: 0 !important;
+}
+
