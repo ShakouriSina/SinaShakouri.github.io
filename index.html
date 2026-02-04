@@ -181,6 +181,38 @@ document.addEventListener("DOMContentLoaded", function () {
     <img id="lightbox-img" src="" alt="Preview">
 </div>
 
+<!-- ==================== ADD THIS SCRIPT ==================== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+    const preview = params.get("preview");
+
+    if (!preview) return;
+
+    let selector = null;
+
+    if (preview === "honor") {
+        selector = "#honors .lightbox-trigger";
+    }
+
+    if (preview === "teaching") {
+        selector = "#teaching .lightbox-trigger";
+    }
+
+    if (selector) {
+        const trigger = document.querySelector(selector);
+        if (trigger) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            lightboxImg.src = trigger.getAttribute("href");
+            lightbox.classList.add("active");
+        }
+    }
+});
+</script>
+<!-- ========================================================= -->
 
 
 
@@ -497,36 +529,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </section>
 
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
 
-    const params = new URLSearchParams(window.location.search);
-    const preview = params.get("preview");
-
-    if (!preview) return;
-
-    let selector = null;
-
-    if (preview === "honor") {
-        selector = "#honors .lightbox-trigger";
-    }
-
-    if (preview === "teaching") {
-        selector = "#teaching .lightbox-trigger";
-    }
-
-    if (selector) {
-        const trigger = document.querySelector(selector);
-        if (trigger) {
-            const lightbox = document.getElementById("lightbox");
-            const lightboxImg = document.getElementById("lightbox-img");
-
-            lightboxImg.src = trigger.getAttribute("href");
-            lightbox.classList.add("active");
-        }
-    }
-});
-</script>
 
 
 				<!-- Three -->
@@ -624,6 +627,7 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	</body>
 
 </html>
+
 
 
 
