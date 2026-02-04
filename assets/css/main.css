@@ -4737,3 +4737,30 @@ input, select, textarea {
 #one .section-title-wrapper {
     margin-top: 0.6rem !important;
 }
+
+
+
+
+/* === FIX CONFERENCE SECTION TOP GAP (REAL FIX) === */
+
+/* حذف padding پیش‌فرض قالب از سکشن Conference */
+#one.wrapper {
+    padding-top: 0 !important;
+}
+
+/* حذف padding داخلی inner */
+#one .inner {
+    padding-top: 0 !important;
+}
+
+/* عنوان بچسبه به بالا */
+#one .section-title-wrapper {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+/* حذف فاصله بالای h2 */
+#one h2 {
+    margin-top: 0 !important;
+}
+
