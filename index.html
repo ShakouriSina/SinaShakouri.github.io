@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<!-- SEO Image for Google -->
+<meta property="og:image" content="https://sinashakouri.com/images/sina-shakouri.jpg">
+<link rel="image_src" href="https://sinashakouri.com/images/sina-shakouri.jpg">
+
+<!-- Schema Person for Google Knowledge/Images -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Sina Shakouri",
+ "image": "https://sinashakouri.com/images/sina-shakouri.jpg",
+ "url": "https://sinashakouri.com",
+ "description": "Official website of Sina Shakouri"
+}
+</script>
+	
 </head>
 
 <body class="is-preload">
@@ -70,7 +87,12 @@
 
                     <h1 class="intro-title">
                         <span id="typing-name"></span><span id="cursor">|</span>
+						<!-- Text cue for Google -->
+						<p style="display:none;">This is the official image of Sina Shakouri.</p>
                     </h1>
+					
+						<p style="display:none;">This is the official image of Sina Shakouri.</p>
+
 
                     <div id="intro-lines" class="intro-lines">
                         <p>— Postgraduate Researcher —</p>
@@ -622,6 +644,10 @@ If you have a question, a project in mind, or simply want to say hello, I’d be
 	    window.location.href = mailtoLink;
 	}
 	</script>
+
+<!-- Hidden image just for Google indexing -->
+<img src="images/sina-shakouri.jpg" alt="Sina Shakouri" style="width:1px; height:1px; opacity:0; position:absolute; left:-9999px;">
+
 
 
 	</body>
